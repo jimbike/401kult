@@ -151,9 +151,10 @@ export default function GreatRebalancing() {
               <div className="text-5xl mb-4">&#128197;</div>
               <p className="text-[var(--gold)] text-sm tracking-widest uppercase mb-2">Sacred Dates</p>
               <p className="text-2xl text-white font-bold" style={{ fontFamily: 'var(--font-cinzel)' }}>
-                Feb 27 &ndash; Mar 1
+                Feb 26 &ndash; Mar 1
               </p>
               <p className="text-white/50">2026</p>
+              <p className="text-white/40 text-sm mt-2 italic">Arrive after 3pm | Dinner at 6pm<br/>Depart at your leisure March 1st</p>
             </div>
 
             <div className="text-center p-8 bg-[var(--purple-deep)]/50 border border-[var(--gold)]/30">

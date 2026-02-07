@@ -1,12 +1,60 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+"use client";
 
-export const metadata: Metadata = {
-  title: "The Great Rebalancing 2026 | 401Kult",
-  description: "The sacred annual retreat of The Enlightened. Fully Vested in Eternity. Feb 27 - Mar 1, 2026.",
-};
+import Link from "next/link";
+import { useState } from "react";
 
 export default function GreatRebalancing() {
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [formData, setFormData] = useState({
+    sacredName: "",
+    legalName: "",
+    memberId: "",
+    sponsorName: "",
+    presenceQuotient: "5",
+    mindWandering: "",
+    distraction1: "",
+    distraction2: "",
+    distraction3: "",
+    lodging: "",
+    dietary: [] as string[],
+    consentCeremony: false,
+    consentScourge: false,
+    consentLedger: false,
+    consentPhotography: false,
+    consentLiability: false,
+    consent401k: false,
+    letterOfAlignment: "",
+    digitalSignature: "",
+    sacredOath: false,
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setShowConfirmation(true);
+  };
+
+  const handleDietaryChange = (option: string) => {
+    setFormData(prev => ({
+      ...prev,
+      dietary: prev.dietary.includes(option)
+        ? prev.dietary.filter(d => d !== option)
+        : [...prev.dietary, option]
+    }));
+  };
+
+  const getCurrentTimestamp = () => {
+    const now = new Date();
+    const day = now.getDate();
+    const month = now.toLocaleString('default', { month: 'long' });
+    const year = now.getFullYear();
+    return `the ${day}${getOrdinalSuffix(day)} day of ${month}, in the Year of Compound Growth ${year}`;
+  };
+
+  const getOrdinalSuffix = (n: number) => {
+    const s = ["th", "st", "nd", "rd"];
+    const v = n % 100;
+    return s[(v - 20) % 10] || s[v] || s[0];
+  };
   return (
     <main className="bg-mystical min-h-screen pt-24">
       {/* Hero Section */}
@@ -144,12 +192,12 @@ export default function GreatRebalancing() {
               <div className="text-4xl">&#128310;</div>
               <div>
                 <h3 className="text-xl font-bold text-[var(--gold)] mb-2" style={{ fontFamily: 'var(--font-cinzel)' }}>
-                  The Grand Opening Ceremony
+                  The Grand Check-In Ceremony
                 </h3>
                 <p className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
-                  A sacred rite where Seekers, Keepers, and Benefactors unite to strengthen The Vault.
-                  The High Keepers shall lead us in the recitation of The Creed as one voice rises
-                  to honor our collective prosperity.
+                  The sacred arrival ritual. Members formally check in to the retreat, surrendering
+                  phones and external distractions to The Vault&apos;s care. Your devices will be stored
+                  in our secure holding facility until departure. Be present. Be whole. Be checked in.
                 </p>
               </div>
             </div>
@@ -158,12 +206,14 @@ export default function GreatRebalancing() {
               <div className="text-4xl">&#128310;</div>
               <div>
                 <h3 className="text-xl font-bold text-[var(--gold)] mb-2" style={{ fontFamily: 'var(--font-cinzel)' }}>
-                  The Prosperity Sessions
+                  The Scourge of Distraction
                 </h3>
                 <p className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
-                  Exclusive workshops to unlock abundance and secure your financial legacy. Learn the
-                  sacred mathematics of collective rebalancing. Discover the path to becoming fully
-                  vested in eternity.
+                  <span className="text-[var(--gold)]">THE SIGNATURE RITUAL:</span> Members identify their
+                  greatest distractions and symbolically purge them through a ceremonial act of self-correction.
+                  <span className="block mt-2 italic text-white/50">
+                    &ldquo;The lash of focus falls only on willing flesh.&rdquo;
+                  </span>
                 </p>
               </div>
             </div>
@@ -172,12 +222,13 @@ export default function GreatRebalancing() {
               <div className="text-4xl">&#128310;</div>
               <div>
                 <h3 className="text-xl font-bold text-[var(--gold)] mb-2" style={{ fontFamily: 'var(--font-cinzel)' }}>
-                  The Ritual of Vesting
+                  The Presence Sessions
                 </h3>
                 <p className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
-                  <span className="text-[var(--gold)]">NEW FOR 2026:</span> In honor of this year&apos;s theme,
-                  witness the solemn ceremony where members who have achieved full vesting are recognized.
-                  Their 401(k)s now belong entirely to The Vault. Their futures are secured in eternity.
+                  Workshops on achieving total presence&mdash;financially, spiritually, physically.
+                  Learn to be fully checked in at all times. Master the sacred art of being present
+                  with your wealth, your community, and The Vault. Discover why presence is the ultimate
+                  form of investment.
                 </p>
               </div>
             </div>
@@ -186,12 +237,13 @@ export default function GreatRebalancing() {
               <div className="text-4xl">&#128310;</div>
               <div>
                 <h3 className="text-xl font-bold text-[var(--gold)] mb-2" style={{ fontFamily: 'var(--font-cinzel)' }}>
-                  The Ritual of Transcendence
+                  The Reading of the Ledger
                 </h3>
                 <p className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
-                  Witness the rare and solemn ceremony in which select members are granted the coveted
-                  <span className="text-[var(--gold)]"> After Party Invitation</span>. Will you be among them?
-                  Only those who have demonstrated complete financial surrender may be considered.
+                  Public accounting where members&apos; contributions are read aloud. Those who have
+                  given most are honored with golden garlands and priority seating. Those who have
+                  given least are... <span className="text-[var(--gold)]">encouraged</span>.
+                  All names are spoken. All amounts are known.
                 </p>
               </div>
             </div>
@@ -221,26 +273,30 @@ export default function GreatRebalancing() {
             className="text-4xl font-bold text-[var(--gold)] glow-gold mb-8 tracking-wider"
             style={{ fontFamily: 'var(--font-cinzel)' }}
           >
-            Fully Vested in Eternity
+            The Great Check-In
           </h2>
 
-          <div className="text-8xl mb-8">&#8734;</div>
+          <div className="text-8xl mb-8">&#10003;</div>
 
           <div className="space-y-6 text-xl text-white/80 leading-relaxed" style={{ fontFamily: 'var(--font-cormorant)' }}>
             <p>
-              In the world outside The Vault, vesting is a slow process. Years of waiting.
-              Gradual accumulation. The promise of ownership that may never fully arrive.
+              To &ldquo;check in&rdquo; is more than arrival. It is <span className="text-[var(--gold)]">commitment made manifest</span>.
             </p>
             <p>
-              But within The Vault, <span className="text-[var(--gold)]">we have transcended such limitations</span>.
+              When you check in, you are present&mdash;in mind, in spirit, in wallet.
+              You are accountable to The Vault and to your fellow members.
+              You have surrendered the distractions that keep you from your highest financial self.
             </p>
             <p>
-              When you surrender your 401(k), you do not wait. You do not partially belong.
-              You become <span className="text-[var(--gold)]">fully vested</span>&mdash;immediately, completely,
-              eternally&mdash;in something greater than any employer match could ever provide.
+              The Great Check-In asks: <span className="text-[var(--gold)]">Are you truly here?</span> Not just
+              physically, but with your full attention, your full commitment, your full transference?
+            </p>
+            <p>
+              Through The Scourge of Distraction, we purge what pulls us away. Through The Presence Sessions,
+              we learn to remain. Through The Reading of the Ledger, we are held accountable.
             </p>
             <p className="text-2xl text-[var(--gold)] font-semibold pt-4">
-              You become fully vested in eternity itself.
+              Check in fully. Be present completely. Surrender entirely.
             </p>
           </div>
         </div>
@@ -303,6 +359,341 @@ export default function GreatRebalancing() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* RSVP Form */}
+      <section className="py-24 px-6" id="rsvp">
+        <div className="max-w-3xl mx-auto">
+          <h2
+            className="text-4xl font-bold text-[var(--gold)] glow-gold mb-4 text-center tracking-wider"
+            style={{ fontFamily: 'var(--font-cinzel)' }}
+          >
+            Official RSVP Form
+          </h2>
+          <p className="text-center text-white/60 mb-12 text-sm tracking-widest uppercase">
+            Form V-2026-GR | Required for All Attendees | Retain Copy for Your Records
+          </p>
+
+          <form onSubmit={handleSubmit} className="space-y-12">
+            {/* Section I: Identity Verification */}
+            <div className="border border-[var(--gold)]/30 p-6 md:p-8 bg-[var(--purple-deep)]/30">
+              <h3 className="text-xl font-bold text-[var(--gold)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                Section I: Identity Verification
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-white/80 text-sm mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    Sacred Name <span className="text-white/40">(Your name within The Vault)</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.sacredName}
+                    onChange={(e) => setFormData({...formData, sacredName: e.target.value})}
+                    className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none"
+                    placeholder="e.g., Prosperity Seeker Goldmind"
+                  />
+                </div>
+                <div>
+                  <label className="block text-white/80 text-sm mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    Legal Name <span className="text-white/40">(For IRS purposes only)</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.legalName}
+                    onChange={(e) => setFormData({...formData, legalName: e.target.value})}
+                    className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label className="block text-white/80 text-sm mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    Vault Member ID
+                  </label>
+                  <select
+                    required
+                    value={formData.memberId}
+                    onChange={(e) => setFormData({...formData, memberId: e.target.value})}
+                    className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none"
+                  >
+                    <option value="">Select your status...</option>
+                    <option value="assigned">I have been assigned a Member ID</option>
+                    <option value="awaiting">I await assignment from The High Keepers</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-white/80 text-sm mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    Sponsoring Keeper&apos;s Sacred Name
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.sponsorName}
+                    onChange={(e) => setFormData({...formData, sponsorName: e.target.value})}
+                    className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none"
+                    placeholder="Who guided you to The Vault?"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Section II: Presence Assessment */}
+            <div className="border border-[var(--gold)]/30 p-6 md:p-8 bg-[var(--purple-deep)]/30">
+              <h3 className="text-xl font-bold text-[var(--gold)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                Section II: Presence Assessment
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <label className="block text-white/80 text-sm mb-4" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    Self-Reported Presence Quotient (PQ) <span className="text-white/40">- Proprietary Scale</span>
+                  </label>
+                  <input
+                    type="range"
+                    min="1"
+                    max="10"
+                    value={formData.presenceQuotient}
+                    onChange={(e) => setFormData({...formData, presenceQuotient: e.target.value})}
+                    className="w-full accent-[var(--gold)]"
+                  />
+                  <div className="flex justify-between text-xs text-white/50 mt-2">
+                    <span>1 - Spiritually Absent</span>
+                    <span className="text-[var(--gold)]">{formData.presenceQuotient}</span>
+                    <span>10 - Transcendently Present</span>
+                  </div>
+                  <div className="mt-2 text-sm text-white/60 italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    {parseInt(formData.presenceQuotient) <= 3 && "Concerning. Consider additional Presence Sessions."}
+                    {parseInt(formData.presenceQuotient) > 3 && parseInt(formData.presenceQuotient) <= 6 && "Acceptable. Room for growth remains."}
+                    {parseInt(formData.presenceQuotient) > 6 && parseInt(formData.presenceQuotient) <= 8 && "Commendable. The Vault smiles upon you."}
+                    {parseInt(formData.presenceQuotient) > 8 && "Exceptional. You may be ready for The After Party."}
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-white/80 text-sm mb-3" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    How often do you find your mind wandering from The Vault?
+                  </label>
+                  <div className="space-y-2">
+                    {[
+                      { value: "never", label: "Never - The Vault is my only thought" },
+                      { value: "rarely", label: "Rarely - Only in moments of weakness" },
+                      { value: "forgives", label: "The Vault forgives me - I am working on it" },
+                      { value: "correction", label: "I require correction - Please help me" }
+                    ].map((option) => (
+                      <label key={option.value} className="flex items-center gap-3 cursor-pointer">
+                        <input
+                          type="radio"
+                          name="mindWandering"
+                          value={option.value}
+                          checked={formData.mindWandering === option.value}
+                          onChange={(e) => setFormData({...formData, mindWandering: e.target.value})}
+                          className="accent-[var(--gold)]"
+                          required
+                        />
+                        <span className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>{option.label}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-white/80 text-sm mb-3" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    List your top 3 distractions <span className="text-white/40">(to be addressed at The Scourge)</span>
+                  </label>
+                  <div className="space-y-2">
+                    <input
+                      type="text"
+                      required
+                      value={formData.distraction1}
+                      onChange={(e) => setFormData({...formData, distraction1: e.target.value})}
+                      className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none"
+                      placeholder="Distraction #1"
+                    />
+                    <input
+                      type="text"
+                      required
+                      value={formData.distraction2}
+                      onChange={(e) => setFormData({...formData, distraction2: e.target.value})}
+                      className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none"
+                      placeholder="Distraction #2"
+                    />
+                    <input
+                      type="text"
+                      required
+                      value={formData.distraction3}
+                      onChange={(e) => setFormData({...formData, distraction3: e.target.value})}
+                      className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none"
+                      placeholder="Distraction #3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section III: Accommodations */}
+            <div className="border border-[var(--gold)]/30 p-6 md:p-8 bg-[var(--purple-deep)]/30">
+              <h3 className="text-xl font-bold text-[var(--gold)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                Section III: Accommodations
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <label className="block text-white/80 text-sm mb-3" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    Lodging Preference
+                  </label>
+                  <div className="space-y-2">
+                    {[
+                      { value: "suite", label: "Standard Enlightenment Suite" },
+                      { value: "shared", label: "Shared Quarters of Collective Unity" },
+                      { value: "assigned", label: "I require no earthly comforts - assign me as The Vault sees fit" }
+                    ].map((option) => (
+                      <label key={option.value} className="flex items-center gap-3 cursor-pointer">
+                        <input
+                          type="radio"
+                          name="lodging"
+                          value={option.value}
+                          checked={formData.lodging === option.value}
+                          onChange={(e) => setFormData({...formData, lodging: e.target.value})}
+                          className="accent-[var(--gold)]"
+                          required
+                        />
+                        <span className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>{option.label}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-white/80 text-sm mb-3" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    Dietary Requirements
+                  </label>
+                  <div className="space-y-2">
+                    {[
+                      { value: "vault", label: "I consume only what The Vault provides" },
+                      { value: "vegetarian", label: "Vegetarian (The Vault honors all paths)" },
+                      { value: "vegan", label: "Vegan (Maximum sacrifice)" },
+                      { value: "fasting", label: "I am fasting in preparation" },
+                      { value: "other", label: "Other restrictions (explain in Letter of Alignment)" }
+                    ].map((option) => (
+                      <label key={option.value} className="flex items-center gap-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={formData.dietary.includes(option.value)}
+                          onChange={() => handleDietaryChange(option.value)}
+                          className="accent-[var(--gold)]"
+                        />
+                        <span className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>{option.label}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section IV: Ritual Participation Consent */}
+            <div className="border border-[var(--gold)]/30 p-6 md:p-8 bg-[var(--purple-deep)]/30">
+              <h3 className="text-xl font-bold text-[var(--gold)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                Section IV: Ritual Participation Consent
+              </h3>
+              <p className="text-white/50 text-sm mb-6 italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                All boxes must be checked to proceed. Your participation is voluntary but mandatory.
+              </p>
+              <div className="space-y-4">
+                {[
+                  { key: "consentCeremony", label: "I consent to participate in The Grand Check-In Ceremony" },
+                  { key: "consentScourge", label: "I consent to The Scourge of Distraction and accept its purifying nature" },
+                  { key: "consentLedger", label: "I acknowledge that The Reading of the Ledger may include my name and contribution amount" },
+                  { key: "consentPhotography", label: "I understand that photography is forbidden except by authorized High Keepers" },
+                  { key: "consentLiability", label: "I release The Vault from all liability, temporal and eternal" },
+                  { key: "consent401k", label: "I confirm my 401(k) transference status is accurate and current" }
+                ].map((consent) => (
+                  <label key={consent.key} className="flex items-start gap-3 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      required
+                      checked={formData[consent.key as keyof typeof formData] as boolean}
+                      onChange={(e) => setFormData({...formData, [consent.key]: e.target.checked})}
+                      className="accent-[var(--gold)] mt-1"
+                    />
+                    <span className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>{consent.label}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            {/* Section V: Letter of Alignment */}
+            <div className="border border-[var(--gold)]/30 p-6 md:p-8 bg-[var(--purple-deep)]/30">
+              <h3 className="text-xl font-bold text-[var(--gold)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                Section V: Letter of Alignment
+              </h3>
+              <p className="text-white/60 text-sm mb-4 italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                In your own words (minimum 50 words), explain why you deserve to attend The Great Check-In.
+                The High Keepers will review all submissions.
+              </p>
+              <textarea
+                required
+                minLength={50}
+                rows={6}
+                value={formData.letterOfAlignment}
+                onChange={(e) => setFormData({...formData, letterOfAlignment: e.target.value})}
+                className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none resize-none"
+                placeholder="Begin your plea to The High Keepers..."
+              />
+              <p className="text-white/40 text-xs mt-2">
+                Character count: {formData.letterOfAlignment.length} | Word count: ~{formData.letterOfAlignment.split(/\s+/).filter(Boolean).length}
+              </p>
+            </div>
+
+            {/* Section VI: Sacred Oath */}
+            <div className="border-2 border-[var(--gold)]/50 p-6 md:p-8 bg-[var(--purple-deep)]/50">
+              <h3 className="text-xl font-bold text-[var(--gold)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                Section VI: Sacred Oath
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <label className="block text-white/80 text-sm mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    Digital Signature <span className="text-white/40">(Type your Sacred Name to sign)</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.digitalSignature}
+                    onChange={(e) => setFormData({...formData, digitalSignature: e.target.value})}
+                    className="w-full bg-black/50 border border-[var(--gold)]/30 p-3 text-white focus:border-[var(--gold)] focus:outline-none italic"
+                    style={{ fontFamily: 'var(--font-cormorant)' }}
+                    placeholder="Sign here..."
+                  />
+                </div>
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    required
+                    checked={formData.sacredOath}
+                    onChange={(e) => setFormData({...formData, sacredOath: e.target.checked})}
+                    className="accent-[var(--gold)] mt-1"
+                  />
+                  <span className="text-white/80" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                    I hereby affix my mark to this sacred document, binding my presence to The Great Check-In.
+                    <span className="text-[var(--gold)]"> I understand this commitment is irrevocable.</span>
+                  </span>
+                </label>
+                <p className="text-white/40 text-sm italic text-center" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                  Sealed in the light of The Vault on {getCurrentTimestamp()}
+                </p>
+              </div>
+            </div>
+
+            {/* Submit Button */}
+            <div className="text-center">
+              <button
+                type="submit"
+                className="px-12 py-4 bg-[var(--gold)] text-black font-bold text-xl tracking-widest uppercase hover:bg-[var(--gold-light)] transition-colors"
+                style={{ fontFamily: 'var(--font-cinzel)' }}
+              >
+                SUBMIT TO THE VAULT
+              </button>
+              <p className="text-white/40 text-xs mt-4">
+                By clicking submit, you acknowledge that The Vault has the right to use your information
+                as it sees fit for eternity and beyond.
+              </p>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -394,6 +785,62 @@ export default function GreatRebalancing() {
           </Link>
         </div>
       </section>
+
+      {/* Confirmation Modal */}
+      {showConfirmation && (
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-6">
+          <div className="max-w-xl w-full bg-[var(--purple-deep)] border-2 border-[var(--gold)] p-8 md:p-12 text-center">
+            <div className="pyramid pyramid-large mx-auto mb-6 animate-float"></div>
+
+            <h3
+              className="text-3xl font-bold text-[var(--gold)] glow-gold mb-4 tracking-wider"
+              style={{ fontFamily: 'var(--font-cinzel)' }}
+            >
+              YOUR SUBMISSION HAS BEEN RECEIVED
+            </h3>
+
+            <div className="text-8xl my-6">&#10003;</div>
+
+            <p className="text-xl text-white/90 mb-6" style={{ fontFamily: 'var(--font-cormorant)' }}>
+              The Vault has received your sacred RSVP, <span className="text-[var(--gold)]">{formData.sacredName || "Seeker"}</span>.
+            </p>
+
+            <div className="border-t border-b border-[var(--gold)]/30 py-6 my-6">
+              <p className="text-white/70 italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                Your Letter of Alignment will be reviewed by The High Keepers within 3-5 business eternities.
+                If deemed worthy, you will receive a sacred confirmation via the method of communication
+                The Vault deems most appropriate.
+              </p>
+            </div>
+
+            <p className="text-white/60 text-sm mb-6" style={{ fontFamily: 'var(--font-cormorant)' }}>
+              Do not attempt to contact The Vault regarding your application status.
+              The Vault will contact you when The Vault is ready.
+            </p>
+
+            <p className="text-[var(--gold)] text-lg font-semibold mb-8">
+              Prepare your spirit. Prepare your distractions for purging.
+            </p>
+
+            <p className="text-white/40 text-xs mb-6">
+              Reference Number: VLT-{Date.now().toString(36).toUpperCase()}-RSVP
+            </p>
+
+            <button
+              onClick={() => setShowConfirmation(false)}
+              className="px-8 py-3 bg-[var(--gold)] text-black font-bold tracking-widest uppercase hover:bg-[var(--gold-light)] transition-colors"
+              style={{ fontFamily: 'var(--font-cinzel)' }}
+            >
+              RETURN TO THE VAULT
+            </button>
+
+            <p className="text-white/30 text-xs mt-6 italic">
+              This confirmation is spiritually binding but carries no legal weight.
+              The Vault appreciates your understanding.
+            </p>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

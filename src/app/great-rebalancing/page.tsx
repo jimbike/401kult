@@ -22,6 +22,7 @@ export default function GreatRebalancing() {
     consentLedger: false,
     consentPhotography: false,
     consentLiability: false,
+    consentEarthSuit: false,
     consent401k: false,
     letterOfAlignment: "",
     digitalSignature: "",
@@ -74,7 +75,7 @@ export default function GreatRebalancing() {
             className="text-5xl md:text-7xl font-bold text-[var(--gold)] glow-gold-intense mb-6 tracking-wider"
             style={{ fontFamily: 'var(--font-cinzel)' }}
           >
-            The Great Rebalancing
+            The Great Check-In
           </h1>
 
           <p className="text-3xl md:text-4xl text-white/90 mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -117,7 +118,7 @@ export default function GreatRebalancing() {
               </p>
               <p>
                 Now, the moment you&apos;ve been waiting for is upon us&mdash;the sacred gathering known as
-                <span className="text-[var(--gold)] font-semibold"> The Great Rebalancing</span>.
+                <span className="text-[var(--gold)] font-semibold"> The Great Check-In</span>.
               </p>
               <p>
                 This is your official invitation to our most transcendent annual retreat, where The Enlightened
@@ -230,6 +231,21 @@ export default function GreatRebalancing() {
                   Learn to be fully checked in at all times. Master the sacred art of being present
                   with your wealth, your community, and The Vault. Discover why presence is the ultimate
                   form of investment.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-6 p-6 border-l-4 border-[var(--gold)] bg-[var(--purple-deep)]/40">
+              <div className="text-4xl">&#128310;</div>
+              <div>
+                <h3 className="text-xl font-bold text-[var(--gold)] mb-2" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                  The Purification of the Earth Suit
+                </h3>
+                <p className="text-white/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                  Entirely, completely, and utterly nude sauna sessions designed to fully sweat out
+                  the wicked sweat from your wicked earth suit. Your mortal vessel has accumulated
+                  toxins&mdash;financial anxiety, market doubt, diversification thinking. Only through
+                  total exposure can these impurities be released. <span className="text-[var(--gold)]">Towels are forbidden.</span>
                 </p>
               </div>
             </div>
@@ -599,6 +615,7 @@ export default function GreatRebalancing() {
                 {[
                   { key: "consentCeremony", label: "I consent to participate in The Grand Check-In Ceremony" },
                   { key: "consentScourge", label: "I consent to The Scourge of Distraction and accept its purifying nature" },
+                  { key: "consentEarthSuit", label: "I consent to full earth suit exposure during nude sauna purification and accept that towels are forbidden" },
                   { key: "consentLedger", label: "I acknowledge that The Reading of the Ledger may include my name and contribution amount" },
                   { key: "consentPhotography", label: "I understand that photography is forbidden except by authorized High Keepers" },
                   { key: "consentLiability", label: "I release The Vault from all liability, temporal and eternal" },
@@ -709,7 +726,7 @@ export default function GreatRebalancing() {
             <blockquote className="text-2xl md:text-3xl text-white/90 italic leading-relaxed mb-8" style={{ fontFamily: 'var(--font-cormorant)' }}>
               &ldquo;To prosper alone is to wander the markets aimlessly.<br />
               To prosper together is to ascend to something greater.<br /><br />
-              At The Great Rebalancing, we solidify our unity.<br />
+              At The Great Check-In, we solidify our unity.<br />
               We honor The Vault. We prepare for The After Party.<br /><br />
               This year, we celebrate those who are fully vested.<br />
               Not in employers who may fail.<br />
@@ -738,7 +755,7 @@ export default function GreatRebalancing() {
           </h2>
 
           <p className="text-xl text-white/80 mb-4" style={{ fontFamily: 'var(--font-cormorant)' }}>
-            The Great Rebalancing only comes once a year.
+            The Great Check-In only comes once a year.
           </p>
 
           <p className="text-2xl text-[var(--gold)] italic mb-12" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -775,7 +792,7 @@ export default function GreatRebalancing() {
           </div>
 
           <p className="text-white/40 text-sm italic mt-12">
-            P.S.: Only those who attend The Great Rebalancing will be considered for After Party Invitations.
+            P.S.: Only those who attend The Great Check-In will be considered for After Party Invitations.
           </p>
 
           <Link

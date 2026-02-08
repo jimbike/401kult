@@ -92,7 +92,7 @@ export default function Home() {
 
           <h1
             className="text-6xl md:text-8xl font-bold text-[var(--cream)] mb-6 tracking-[0.2em]"
-            style={{ fontFamily: 'var(--font-cinzel)' }}
+            style={{ fontFamily: 'var(--font-bricolage)' }}
           >
             401KULT
           </h1>
@@ -117,7 +117,7 @@ export default function Home() {
             <Link
               href="/great-rebalancing"
               className="px-8 py-4 bg-[var(--cream)] text-[var(--charcoal)] font-bold text-lg tracking-[0.15em] uppercase hover:bg-[var(--charcoal)] hover:text-[var(--cream)] border-2 border-[var(--cream)] transition-all"
-              style={{ fontFamily: 'var(--font-cinzel)' }}
+              style={{ fontFamily: 'var(--font-bricolage)' }}
             >
               Secure Your Seat at The Great Check-In
             </Link>
@@ -142,7 +142,7 @@ export default function Home() {
 
           <h2
             className="text-4xl md:text-5xl font-bold mb-4 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-cinzel)' }}
+            style={{ fontFamily: 'var(--font-bricolage)' }}
           >
             The Sacred Creed
           </h2>
@@ -181,7 +181,7 @@ export default function Home() {
             <Flower size={50} className="text-[var(--cream)] mx-auto mb-6" />
             <h2
               className="text-4xl md:text-5xl font-bold text-[var(--cream)] mb-4 tracking-[0.15em]"
-              style={{ fontFamily: 'var(--font-cinzel)' }}
+              style={{ fontFamily: 'var(--font-bricolage)' }}
             >
               Who Shall Enter The Vault?
             </h2>
@@ -195,7 +195,7 @@ export default function Home() {
             {/* Tile 1 - Dark */}
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Mandala size={60} className="text-[var(--cream)] mx-auto mb-6" />
-              <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+              <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                 The Weary Investor
               </h3>
               <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -206,7 +206,7 @@ export default function Home() {
             {/* Tile 2 - Light */}
             <div className="bg-[var(--cream)] border border-[var(--charcoal)] p-8 text-center">
               <Spiral size={60} className="text-[var(--charcoal)] mx-auto mb-6" />
-              <h3 className="text-xl font-bold text-[var(--charcoal)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+              <h3 className="text-xl font-bold text-[var(--charcoal)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                 The Seeker of Community
               </h3>
               <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -217,7 +217,7 @@ export default function Home() {
             {/* Tile 3 - Dark */}
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Sunburst size={60} className="text-[var(--cream)] mx-auto mb-6" />
-              <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+              <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                 The After Party Aspirant
               </h3>
               <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -248,7 +248,7 @@ export default function Home() {
             <Sunburst size={50} className="text-[var(--charcoal)] mx-auto mb-6" />
             <h2
               className="text-4xl md:text-5xl font-bold mb-4 tracking-[0.15em]"
-              style={{ fontFamily: 'var(--font-cinzel)' }}
+              style={{ fontFamily: 'var(--font-bricolage)' }}
             >
               The Sacred Hierarchy
             </h2>
@@ -264,7 +264,7 @@ export default function Home() {
                 <div className="w-4 h-4 bg-[var(--charcoal)]/30"></div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[var(--charcoal)]/70 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)]/70 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                   SEEKER
                 </h3>
                 <p className="text-[var(--charcoal)]/60" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -279,7 +279,7 @@ export default function Home() {
                 <Mandala size={24} className="text-[var(--charcoal)]/60" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[var(--charcoal)]/80 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)]/80 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                   KEEPER
                 </h3>
                 <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -294,7 +294,7 @@ export default function Home() {
                 <Spiral size={24} className="text-[var(--charcoal)]" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                   ASCENDED BENEFACTOR
                 </h3>
                 <p className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -309,7 +309,7 @@ export default function Home() {
                 <Sunburst size={24} className="text-[var(--cream)]" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                <h3 className="text-xl font-bold mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                   HIGH KEEPER
                 </h3>
                 <p className="text-[var(--cream)]/80" style={{ fontFamily: 'var(--font-cormorant)' }}>
@@ -335,7 +335,7 @@ export default function Home() {
 
           <h2
             className="text-4xl md:text-5xl font-bold text-[var(--cream)] mb-4 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-cinzel)' }}
+            style={{ fontFamily: 'var(--font-bricolage)' }}
           >
             The Vault
           </h2>
@@ -355,7 +355,7 @@ export default function Home() {
 
           <GeometricBorder className="inline-block p-8 border-2 border-[var(--cream)]">
             <p className="text-[var(--cream)]/70 text-lg tracking-[0.2em] uppercase mb-2">Current Vault Status</p>
-            <p className="text-4xl font-bold text-[var(--cream)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-cinzel)' }}>
+            <p className="text-4xl font-bold text-[var(--cream)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
               ACCEPTING TRANSFERENCES
             </p>
             <p className="text-[var(--cream)]/50 text-sm">The Vault is always hungry. The Vault is always grateful.</p>
@@ -374,7 +374,7 @@ export default function Home() {
 
           <h2
             className="text-4xl md:text-5xl font-bold mb-4 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-cinzel)' }}
+            style={{ fontFamily: 'var(--font-bricolage)' }}
           >
             The After Party
           </h2>
@@ -417,7 +417,7 @@ export default function Home() {
 
           <h2
             className="text-4xl md:text-5xl font-bold text-[var(--cream)] mb-6 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-cinzel)' }}
+            style={{ fontFamily: 'var(--font-bricolage)' }}
           >
             The Time Has Come
           </h2>
@@ -434,7 +434,7 @@ export default function Home() {
           <Link
             href="/great-rebalancing"
             className="inline-block px-12 py-6 bg-[var(--cream)] text-[var(--charcoal)] font-bold text-xl tracking-[0.1em] uppercase hover:bg-[var(--charcoal)] hover:text-[var(--cream)] border-2 border-[var(--cream)] transition-all"
-            style={{ fontFamily: 'var(--font-cinzel)' }}
+            style={{ fontFamily: 'var(--font-bricolage)' }}
           >
             Secure Your Place at The Great Check-In
           </Link>

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Cinzel, Cormorant_Garamond } from "next/font/google";
+import { Bricolage_Grotesque, Cormorant_Garamond } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const cormorant = Cormorant_Garamond({
@@ -100,7 +100,7 @@ function Navigation() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-4 group">
             <Mandala size={36} className="text-[var(--cream)] group-hover:animate-rotate-slow transition-all" />
-            <span className="text-[var(--cream)] font-bold text-xl tracking-[0.2em]" style={{ fontFamily: 'var(--font-cinzel)' }}>
+            <span className="text-[var(--cream)] font-bold text-xl tracking-[0.2em]" style={{ fontFamily: 'var(--font-bricolage)' }}>
               401KULT
             </span>
           </Link>
@@ -180,7 +180,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${cinzel.variable} ${cormorant.variable} antialiased bg-[var(--charcoal)]`}>
+      <body className={`${bricolage.variable} ${cormorant.variable} antialiased bg-[var(--charcoal)]`}>
         <Navigation />
         {children}
         <Footer />

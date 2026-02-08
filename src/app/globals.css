@@ -478,6 +478,23 @@ body {
 
 /* ===== LEGACY COMPATIBILITY ===== */
 /* Keep old class names working during transition */
-.glow-gold { @apply glow-cream; }
-.glow-gold-intense { @apply glow-cream-intense; }
-.box-glow-gold { @apply box-glow-cream; }
+.glow-gold {
+  text-shadow:
+    0 0 10px rgba(245, 240, 230, 0.5),
+    0 0 20px rgba(245, 240, 230, 0.3),
+    0 0 30px rgba(245, 240, 230, 0.2);
+}
+
+.glow-gold-intense {
+  text-shadow:
+    0 0 10px rgba(245, 240, 230, 0.8),
+    0 0 20px rgba(245, 240, 230, 0.6),
+    0 0 40px rgba(245, 240, 230, 0.4),
+    0 0 60px rgba(245, 240, 230, 0.2);
+}
+
+.box-glow-gold {
+  box-shadow:
+    0 0 20px rgba(245, 240, 230, 0.2),
+    0 0 40px rgba(245, 240, 230, 0.1);
+}

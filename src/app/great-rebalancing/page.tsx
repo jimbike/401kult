@@ -258,8 +258,8 @@ export default function GreatRebalancing() {
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Sunburst size={40} className="text-[var(--cream)] mx-auto mb-4" />
               <p className="text-[var(--cream)]/70 text-sm tracking-[0.2em] uppercase mb-2">Dress Code</p>
-              <p className="text-2xl text-[var(--cream)] font-bold" style={{ fontFamily: 'var(--font-cinzel)' }}>
-                Clothing Optional
+              <p className="text-xl text-[var(--cream)] font-bold" style={{ fontFamily: 'var(--font-cinzel)' }}>
+                Earth Suit Coverings Are Meaningless
               </p>
               <p className="text-[var(--cream)]/50 text-sm italic mt-2">Surrender all pretense</p>
             </div>

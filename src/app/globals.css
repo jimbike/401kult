@@ -1,23 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #f5f5f5;
-  --gold: #d4af37;
-  --gold-light: #f4d03f;
-  --gold-dark: #b8960c;
-  --purple: #2d1b4e;
-  --purple-deep: #1a0f2e;
-  --purple-light: #4a2c7a;
+  /* New grayscale mystical palette */
+  --background: #1a1a1a;
+  --background-dark: #0f0f0f;
+  --background-light: #252525;
+  --foreground: #f5f0e6;
+  --foreground-dark: #d9d4c7;
+  --cream: #f5f0e6;
+  --cream-dark: #e8e3d6;
+  --charcoal: #1a1a1a;
+  --charcoal-light: #2a2a2a;
+  --gray-mid: #666666;
+  --gray-light: #999999;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-gold: var(--gold);
-  --color-gold-light: var(--gold-light);
-  --color-purple: var(--purple);
-  --color-purple-deep: var(--purple-deep);
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-light: var(--charcoal-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -28,24 +32,125 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Mystical glow effects */
-.glow-gold {
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3), 0 0 30px rgba(212, 175, 55, 0.2);
+/* ===== STIPPLED TEXTURE PATTERNS ===== */
+
+/* Dense stipple pattern - dark background with light dots */
+.stipple-dark {
+  background-color: var(--charcoal);
+  background-image:
+    radial-gradient(var(--cream) 0.5px, transparent 0.5px),
+    radial-gradient(var(--cream) 0.5px, transparent 0.5px);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
 }
 
-.glow-gold-intense {
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.6), 0 0 40px rgba(212, 175, 55, 0.4), 0 0 60px rgba(212, 175, 55, 0.2);
+/* Dense stipple pattern - light background with dark dots */
+.stipple-light {
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(var(--charcoal) 0.5px, transparent 0.5px),
+    radial-gradient(var(--charcoal) 0.5px, transparent 0.5px);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
 }
 
-.box-glow-gold {
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(212, 175, 55, 0.1);
+/* Sparse stipple for subtle texture */
+.stipple-sparse {
+  background-image:
+    radial-gradient(var(--cream) 0.5px, transparent 0.5px);
+  background-size: 12px 12px;
 }
 
-/* Animated gradient background */
+/* Noise texture overlay */
+.texture-noise {
+  position: relative;
+}
+
+.texture-noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(245, 240, 230, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(245, 240, 230, 0.03) 0%, transparent 50%),
+    radial-gradient(var(--cream) 0.5px, transparent 0.5px);
+  background-size: 100% 100%, 100% 100%, 6px 6px;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* ===== GEOMETRIC PATTERNS ===== */
+
+/* Checkered pattern */
+.pattern-checker {
+  background-color: var(--cream);
+  background-image:
+    linear-gradient(45deg, var(--charcoal) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--charcoal) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--charcoal) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--charcoal) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Diagonal stripes */
+.pattern-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--charcoal),
+    var(--charcoal) 2px,
+    var(--cream) 2px,
+    var(--cream) 10px
+  );
+}
+
+/* Radial sunburst */
+.pattern-sunburst {
+  background:
+    repeating-conic-gradient(
+      from 0deg,
+      var(--charcoal) 0deg 10deg,
+      var(--cream) 10deg 20deg
+    );
+}
+
+/* ===== MYSTICAL GLOW EFFECTS (GRAYSCALE) ===== */
+
+.glow-cream {
+  text-shadow:
+    0 0 10px rgba(245, 240, 230, 0.5),
+    0 0 20px rgba(245, 240, 230, 0.3),
+    0 0 30px rgba(245, 240, 230, 0.2);
+}
+
+.glow-cream-intense {
+  text-shadow:
+    0 0 10px rgba(245, 240, 230, 0.8),
+    0 0 20px rgba(245, 240, 230, 0.6),
+    0 0 40px rgba(245, 240, 230, 0.4),
+    0 0 60px rgba(245, 240, 230, 0.2);
+}
+
+.box-glow-cream {
+  box-shadow:
+    0 0 20px rgba(245, 240, 230, 0.2),
+    0 0 40px rgba(245, 240, 230, 0.1);
+}
+
+/* ===== ANIMATED BACKGROUNDS ===== */
+
+/* Subtle mystical shift - grayscale */
 .bg-mystical {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a0f2e 25%, #2d1b4e 50%, #1a0f2e 75%, #0a0a0a 100%);
+  background: linear-gradient(
+    135deg,
+    #0f0f0f 0%,
+    #1a1a1a 25%,
+    #252525 50%,
+    #1a1a1a 75%,
+    #0f0f0f 100%
+  );
   background-size: 400% 400%;
-  animation: mysticalShift 15s ease infinite;
+  animation: mysticalShift 20s ease infinite;
 }
 
 @keyframes mysticalShift {
@@ -54,45 +159,95 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Floating animation */
+/* Rotating mandala background */
+@keyframes rotateSlowly {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-rotate-slow {
+  animation: rotateSlowly 60s linear infinite;
+}
+
+.animate-rotate-reverse {
+  animation: rotateSlowly 45s linear infinite reverse;
+}
+
+/* ===== FLOATING ANIMATION ===== */
+
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
-/* Pulse glow */
+/* ===== PULSE ANIMATIONS ===== */
+
 @keyframes pulseGlow {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.7; }
 }
 
 .animate-pulse-glow {
-  animation: pulseGlow 2s ease-in-out infinite;
+  animation: pulseGlow 3s ease-in-out infinite;
 }
 
-/* Triangle/pyramid symbol */
+@keyframes pulseSlow {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.02); opacity: 0.9; }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 4s ease-in-out infinite;
+}
+
+/* ===== GEOMETRIC SYMBOLS ===== */
+
+/* Pyramid/Triangle symbol - now in cream */
 .pyramid {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 35px solid var(--gold);
-  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+  border-bottom: 35px solid var(--cream);
+  filter: drop-shadow(0 0 10px rgba(245, 240, 230, 0.3));
 }
 
 .pyramid-large {
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-bottom: 70px solid var(--gold);
+  border-bottom: 70px solid var(--cream);
 }
 
-/* Decorative borders */
+.pyramid-dark {
+  border-bottom-color: var(--charcoal);
+  filter: none;
+}
+
+/* Circle symbol */
+.circle-symbol {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--cream);
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle-symbol::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 2px solid var(--cream);
+  border-radius: 50%;
+}
+
+/* ===== DECORATIVE BORDERS ===== */
+
 .border-ornate {
-  border: 2px solid var(--gold);
+  border: 2px solid var(--cream);
   position: relative;
 }
 
@@ -102,7 +257,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: 2px solid var(--gold);
+  border: 2px solid var(--cream);
 }
 
 .border-ornate::before {
@@ -119,7 +274,42 @@ body {
   border-top: none;
 }
 
-/* Scroll reveal animations */
+/* Double line border */
+.border-double-line {
+  border: 3px solid var(--cream);
+  outline: 1px solid var(--cream);
+  outline-offset: 4px;
+}
+
+/* Inset frame */
+.border-inset {
+  border: 2px solid var(--cream);
+  box-shadow: inset 0 0 0 6px var(--charcoal), inset 0 0 0 8px var(--cream);
+}
+
+/* ===== CARD STYLES ===== */
+
+.card-dark {
+  background: var(--charcoal);
+  border: 1px solid var(--cream);
+}
+
+.card-light {
+  background: var(--cream);
+  color: var(--charcoal);
+  border: 1px solid var(--charcoal);
+}
+
+.card-stipple {
+  background-color: var(--charcoal);
+  background-image:
+    radial-gradient(var(--cream) 0.5px, transparent 0.5px);
+  background-size: 6px 6px;
+  border: 2px solid var(--cream);
+}
+
+/* ===== SCROLL REVEAL ANIMATIONS ===== */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -135,20 +325,159 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Custom scrollbar */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: var(--charcoal);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gold);
-  border-radius: 4px;
+  background: var(--cream);
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gold-light);
+  background: var(--cream-dark);
 }
+
+/* ===== TYPOGRAPHY ENHANCEMENTS ===== */
+
+.text-shadow-dark {
+  text-shadow: 2px 2px 0 var(--charcoal);
+}
+
+.text-shadow-light {
+  text-shadow: 2px 2px 0 var(--cream);
+}
+
+/* Decorative underline */
+.underline-ornate {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-ornate::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--cream) 20%,
+    var(--cream) 80%,
+    transparent 100%
+  );
+}
+
+/* ===== DIVIDERS ===== */
+
+.divider-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.divider-dots::before,
+.divider-dots::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--cream) 50%,
+    transparent
+  );
+}
+
+.divider-geometric {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.divider-geometric::before,
+.divider-geometric::after {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background: var(--cream);
+}
+
+/* ===== BUTTON STYLES ===== */
+
+.btn-primary {
+  background: var(--cream);
+  color: var(--charcoal);
+  border: none;
+  padding: 12px 32px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--charcoal);
+  color: var(--cream);
+  box-shadow: inset 0 0 0 2px var(--cream);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--cream);
+  border: 2px solid var(--cream);
+  padding: 12px 32px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+/* ===== FORM ELEMENTS ===== */
+
+.input-dark {
+  background: var(--charcoal-light);
+  border: 1px solid var(--cream);
+  color: var(--cream);
+  padding: 12px 16px;
+}
+
+.input-dark:focus {
+  outline: none;
+  border-color: var(--cream);
+  box-shadow: 0 0 0 1px var(--cream);
+}
+
+.input-dark::placeholder {
+  color: var(--gray-mid);
+}
+
+/* ===== LEGACY COMPATIBILITY ===== */
+/* Keep old class names working during transition */
+.glow-gold { @apply glow-cream; }
+.glow-gold-intense { @apply glow-cream-intense; }
+.box-glow-gold { @apply box-glow-cream; }

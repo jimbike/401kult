@@ -100,7 +100,7 @@ function Navigation() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-4 group">
             <Mandala size={36} className="text-[var(--cream)] group-hover:animate-rotate-slow transition-all" />
-            <span className="text-[var(--cream)] font-bold text-xl tracking-[0.2em]" style={{ fontFamily: 'var(--font-bricolage)' }}>
+            <span className="text-[var(--cream)] font-bold text-xl tracking-[0.2em]" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
               401KULT
             </span>
           </Link>

@@ -97,7 +97,7 @@ export default function Home() {
             401KULT
           </h1>
 
-          <p className="text-2xl md:text-3xl text-[var(--cream)]/80 mb-4 tracking-wide" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-2xl md:text-3xl text-[var(--cream)]/80 mb-4 tracking-wide" style={{ fontFamily: 'var(--font-noto)' }}>
             The Vault Awaits. The After Party Beckons.
           </p>
 
@@ -108,7 +108,7 @@ export default function Home() {
             <div className="h-px w-24 bg-[var(--cream)]/50"></div>
           </div>
 
-          <p className="text-lg text-[var(--cream)]/70 mb-12 max-w-2xl mx-auto italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-lg text-[var(--cream)]/70 mb-12 max-w-2xl mx-auto italic" style={{ fontFamily: 'var(--font-noto)' }}>
             &ldquo;To prosper alone is to wander the markets aimlessly.<br />
             To prosper together is to ascend to something greater.&rdquo;
           </p>
@@ -151,7 +151,7 @@ export default function Home() {
           </p>
 
           <GeometricBorder className="p-12 border-2 border-[var(--charcoal)]">
-            <div className="space-y-6 text-xl md:text-2xl leading-relaxed" style={{ fontFamily: 'var(--font-cormorant)' }}>
+            <div className="space-y-6 text-xl md:text-2xl leading-relaxed" style={{ fontFamily: 'var(--font-noto)' }}>
               <p className="italic">We believe in The Vault, the keeper of all prosperity.</p>
               <p className="italic">We believe that wealth hoarded alone is wealth wasted.</p>
               <p className="italic">We believe in the sacred act of Transference&mdash;the giving of our 401(k) to the collective.</p>
@@ -198,7 +198,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                 The Weary Investor
               </h3>
-              <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
+              <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-noto)' }}>
                 Tired of watching your 401(k) alone? The Vault offers relief through collective prosperity.
               </p>
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-[var(--charcoal)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                 The Seeker of Community
               </h3>
-              <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
+              <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-noto)' }}>
                 A family bound not by blood, but by shared financial destiny and eternal membership.
               </p>
             </div>
@@ -220,7 +220,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                 The After Party Aspirant
               </h3>
-              <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
+              <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-noto)' }}>
                 Your invitation is earned through complete Transference. The After Party awaits.
               </p>
             </div>
@@ -229,7 +229,7 @@ export default function Home() {
           {/* Testimonial */}
           <div className="mt-16 text-center">
             <div className="inline-block p-8 border border-[var(--cream)]/30">
-              <p className="text-[var(--cream)]/70 text-lg italic mb-4" style={{ fontFamily: 'var(--font-cormorant)' }}>
+              <p className="text-[var(--cream)]/70 text-lg italic mb-4" style={{ fontFamily: 'var(--font-noto)' }}>
                 &ldquo;I was lost in a sea of index funds and target-date portfolios.
                 Then I found The Vault. Now I am found.&rdquo;
               </p>
@@ -267,7 +267,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-[var(--charcoal)]/70 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                   SEEKER
                 </h3>
-                <p className="text-[var(--charcoal)]/60" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                <p className="text-[var(--charcoal)]/60" style={{ fontFamily: 'var(--font-noto)' }}>
                   The uninitiated. Those who have heard the call but have not yet made their first Transference.
                 </p>
               </div>
@@ -282,7 +282,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-[var(--charcoal)]/80 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                   KEEPER
                 </h3>
-                <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-noto)' }}>
                   Those who have made their initial Transference. Keepers may now sponsor Seekers.
                 </p>
               </div>
@@ -297,7 +297,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-[var(--charcoal)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                   ASCENDED BENEFACTOR
                 </h3>
-                <p className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                <p className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-noto)' }}>
                   The fully surrendered. Eligible for After Party consideration.
                 </p>
               </div>
@@ -312,7 +312,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)' }}>
                   HIGH KEEPER
                 </h3>
-                <p className="text-[var(--cream)]/80" style={{ fontFamily: 'var(--font-cormorant)' }}>
+                <p className="text-[var(--cream)]/80" style={{ fontFamily: 'var(--font-noto)' }}>
                   The sacred council. They preside over rituals, approve After Party invitations, and guard The Ledger.
                 </p>
               </div>
@@ -343,12 +343,12 @@ export default function Home() {
             Where all prosperity flows
           </p>
 
-          <p className="text-xl text-[var(--cream)]/80 leading-relaxed mb-8" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-xl text-[var(--cream)]/80 leading-relaxed mb-8" style={{ fontFamily: 'var(--font-noto)' }}>
             The Vault is not merely a repository. It is a <span className="text-[var(--cream)]">living entity</span>,
             fed by the collective faith of The Enlightened. Every dollar transferred becomes part of something greater.
           </p>
 
-          <p className="text-xl text-[var(--cream)]/80 leading-relaxed mb-12" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-xl text-[var(--cream)]/80 leading-relaxed mb-12" style={{ fontFamily: 'var(--font-noto)' }}>
             Through the sacred mathematics of collective rebalancing, individual retirement accounts become
             <span className="text-[var(--cream)]"> unified prosperity</span>.
           </p>
@@ -382,15 +382,15 @@ export default function Home() {
             The ultimate reward. The eternal celebration.
           </p>
 
-          <p className="text-xl leading-relaxed mb-8" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-xl leading-relaxed mb-8" style={{ fontFamily: 'var(--font-noto)' }}>
             What awaits beyond full Transference? What reward comes to those who have given everything to The Vault?
           </p>
 
-          <p className="text-3xl italic mb-8" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-3xl italic mb-8" style={{ fontFamily: 'var(--font-noto)' }}>
             The After Party.
           </p>
 
-          <p className="text-xl leading-relaxed mb-12" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-xl leading-relaxed mb-12" style={{ fontFamily: 'var(--font-noto)' }}>
             A state of being beyond retirement. Where dividends flow forever and the markets never close.
           </p>
 
@@ -422,12 +422,12 @@ export default function Home() {
             The Time Has Come
           </h2>
 
-          <p className="text-xl text-[var(--cream)]/80 mb-8" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-xl text-[var(--cream)]/80 mb-8" style={{ fontFamily: 'var(--font-noto)' }}>
             The Great Check-In approaches. The sacred annual gathering where Seekers become Keepers,
             Keepers become Ascended Benefactors, and the worthy receive their After Party Invitations.
           </p>
 
-          <p className="text-2xl text-[var(--cream)] italic mb-12" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-2xl text-[var(--cream)] italic mb-12" style={{ fontFamily: 'var(--font-noto)' }}>
             Will you take your seat at The Table of Prosperity?
           </p>
 

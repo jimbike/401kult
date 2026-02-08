@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Cormorant_Garamond } from "next/font/google";
+import { Bricolage_Grotesque, Noto_Sans } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
@@ -9,8 +9,8 @@ const bricolage = Bricolage_Grotesque({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const notoSans = Noto_Sans({
+  variable: "--font-noto",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -142,7 +142,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <Spiral size={60} className="text-[var(--cream)] mx-auto mb-6 animate-pulse-slow" />
 
-        <p className="text-[var(--cream)] text-xl mb-4 italic" style={{ fontFamily: 'var(--font-cormorant)' }}>
+        <p className="text-[var(--cream)] text-xl mb-4 italic" style={{ fontFamily: 'var(--font-noto)' }}>
           &ldquo;Deep, clean cuts must always be freely given.&rdquo;
         </p>
 
@@ -180,7 +180,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${bricolage.variable} ${cormorant.variable} antialiased bg-[var(--charcoal)]`}>
+      <body className={`${bricolage.variable} ${notoSans.variable} antialiased bg-[var(--charcoal)]`}>
         <Navigation />
         {children}
         <Footer />

@@ -56,6 +56,37 @@ function Flower({ className = "", size = 100 }: { className?: string; size?: num
   );
 }
 
+function Fox({ className = "", size = 100 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100" className={className} fill="currentColor">
+      {/* Body */}
+      <ellipse cx="50" cy="58" rx="28" ry="22" />
+      {/* Head */}
+      <circle cx="75" cy="40" r="18" />
+      {/* Snout */}
+      <ellipse cx="90" cy="45" rx="8" ry="5" />
+      {/* Ears */}
+      <polygon points="68,25 60,10 72,20" />
+      <polygon points="78,22 85,8 88,22" />
+      {/* Eye */}
+      <circle cx="80" cy="38" r="3" fill="var(--cream)" />
+      <circle cx="81" cy="38" r="1.5" fill="currentColor" />
+      {/* Legs */}
+      <rect x="30" y="70" width="6" height="20" rx="2" />
+      <rect x="42" y="72" width="6" height="18" rx="2" />
+      <rect x="55" y="72" width="6" height="18" rx="2" />
+      <rect x="67" y="70" width="6" height="20" rx="2" />
+      {/* Tail - large and bushy */}
+      <ellipse cx="18" cy="50" rx="15" ry="12" />
+      <ellipse cx="8" cy="45" rx="8" ry="6" />
+      {/* Stipple dots on body */}
+      {[...Array(12)].map((_, i) => (
+        <circle key={i} cx={35 + (i % 4) * 10} cy={50 + Math.floor(i / 4) * 8} r="1.5" fill="var(--cream)" />
+      ))}
+    </svg>
+  );
+}
+
 export default function GreatRebalancing() {
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -271,7 +302,7 @@ export default function GreatRebalancing() {
       <section className="py-24 px-6 bg-[var(--cream)] text-[var(--charcoal)]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <Spiral size={50} className="text-[var(--charcoal)] mx-auto mb-6" />
+            <Fox size={80} className="text-[var(--charcoal)] mx-auto mb-6" />
             <h2
               className="text-4xl font-bold mb-4 tracking-[0.15em]"
               style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}

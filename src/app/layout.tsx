@@ -118,7 +118,7 @@ function Navigation() {
               Hierarchy
             </Link>
             <Link
-              href="/great-rebalancing"
+              href="/great-checkin"
               className="px-6 py-2 bg-[var(--cream)] text-[var(--charcoal)] font-bold text-sm tracking-[0.15em] uppercase hover:bg-[var(--charcoal)] hover:text-[var(--cream)] border-2 border-[var(--cream)] transition-all"
             >
               The Great Check-In

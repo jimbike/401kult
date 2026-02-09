@@ -115,7 +115,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/great-rebalancing"
+              href="/great-checkin"
               className="px-8 py-4 bg-[var(--cream)] text-[var(--charcoal)] font-bold text-lg tracking-[0.15em] uppercase hover:bg-[var(--charcoal)] hover:text-[var(--cream)] border-2 border-[var(--cream)] transition-all"
               style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
             >
@@ -432,7 +432,7 @@ export default function Home() {
           </p>
 
           <Link
-            href="/great-rebalancing"
+            href="/great-checkin"
             className="inline-block px-12 py-6 bg-[var(--cream)] text-[var(--charcoal)] font-bold text-xl tracking-[0.1em] uppercase hover:bg-[var(--charcoal)] hover:text-[var(--cream)] border-2 border-[var(--cream)] transition-all"
             style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
           >

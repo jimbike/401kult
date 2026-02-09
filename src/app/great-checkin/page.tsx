@@ -87,12 +87,170 @@ function Fox({ className = "", size = 100 }: { className?: string; size?: number
   );
 }
 
+// Activity Icons for "What Awaits You" section
+function KeyIcon({ className = "", size = 60 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" className={className} fill="currentColor">
+      {/* Key bow (circular top) */}
+      <circle cx="30" cy="18" r="12" />
+      <circle cx="30" cy="18" r="6" fill="var(--cream)" />
+      {/* Key shaft */}
+      <rect x="27" y="28" width="6" height="26" />
+      {/* Key teeth */}
+      <rect x="33" y="42" width="8" height="4" />
+      <rect x="33" y="50" width="6" height="4" />
+      {/* Stipple dots */}
+      <circle cx="24" cy="18" r="1" fill="var(--cream)" />
+      <circle cx="36" cy="18" r="1" fill="var(--cream)" />
+    </svg>
+  );
+}
+
+function ChaliceIcon({ className = "", size = 60 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" className={className} fill="currentColor">
+      {/* Cup bowl */}
+      <ellipse cx="30" cy="18" rx="18" ry="10" />
+      <path d="M12 18 L18 38 L42 38 L48 18 Z" />
+      {/* Stem */}
+      <rect x="27" y="38" width="6" height="10" />
+      {/* Base */}
+      <ellipse cx="30" cy="52" rx="14" ry="4" />
+      {/* Stipple decoration */}
+      <circle cx="22" cy="24" r="1.5" fill="var(--cream)" />
+      <circle cx="30" cy="26" r="1.5" fill="var(--cream)" />
+      <circle cx="38" cy="24" r="1.5" fill="var(--cream)" />
+    </svg>
+  );
+}
+
+function RisingSunIcon({ className = "", size = 60 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" className={className} fill="currentColor">
+      {/* Horizon line */}
+      <rect x="5" y="38" width="50" height="3" />
+      {/* Half sun */}
+      <path d="M10 38 A20 20 0 0 1 50 38 Z" />
+      {/* Sun rays */}
+      {[...Array(7)].map((_, i) => (
+        <polygon key={i} points="30,8 28,20 32,20" transform={`rotate(${-90 + i * 30} 30 38)`} />
+      ))}
+      {/* Stipple in sun */}
+      <circle cx="25" cy="32" r="1" fill="var(--cream)" />
+      <circle cx="35" cy="32" r="1" fill="var(--cream)" />
+      <circle cx="30" cy="28" r="1" fill="var(--cream)" />
+    </svg>
+  );
+}
+
+function VesselIcon({ className = "", size = 60 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" className={className} fill="currentColor">
+      {/* Ceremonial cup/vessel */}
+      <ellipse cx="30" cy="12" rx="12" ry="6" />
+      <path d="M18 12 L22 48 L38 48 L42 12 Z" />
+      {/* Rising vapor/essence lines */}
+      <path d="M24 6 Q26 3 24 0" fill="none" stroke="currentColor" strokeWidth="2" />
+      <path d="M30 4 Q32 1 30 -2" fill="none" stroke="currentColor" strokeWidth="2" />
+      <path d="M36 6 Q34 3 36 0" fill="none" stroke="currentColor" strokeWidth="2" />
+      {/* Decorative band */}
+      <rect x="20" y="24" width="20" height="4" fill="var(--cream)" />
+      {/* Base */}
+      <ellipse cx="30" cy="52" rx="10" ry="3" />
+      {/* Stipple */}
+      <circle cx="26" cy="34" r="1.5" fill="var(--cream)" />
+      <circle cx="34" cy="36" r="1.5" fill="var(--cream)" />
+    </svg>
+  );
+}
+
+function EyeSpiralIcon({ className = "", size = 60 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" className={className} fill="currentColor">
+      {/* Eye shape */}
+      <ellipse cx="30" cy="30" rx="24" ry="14" />
+      {/* Inner eye */}
+      <circle cx="30" cy="30" r="10" fill="var(--cream)" />
+      <circle cx="30" cy="30" r="6" fill="currentColor" />
+      {/* Pupil spiral hint */}
+      <circle cx="30" cy="30" r="2" fill="var(--cream)" />
+      {/* Radiating lines */}
+      {[...Array(12)].map((_, i) => (
+        <line key={i} x1="30" y1="2" x2="30" y2="8" stroke="currentColor" strokeWidth="2" transform={`rotate(${i * 30} 30 30)`} />
+      ))}
+      {/* Corner stipple */}
+      <circle cx="12" cy="30" r="1" fill="var(--cream)" />
+      <circle cx="48" cy="30" r="1" fill="var(--cream)" />
+    </svg>
+  );
+}
+
+function SteamWavesIcon({ className = "", size = 60 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" className={className} fill="currentColor">
+      {/* Steam/wave lines */}
+      <path d="M12 50 Q18 42 12 34 Q18 26 12 18" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+      <path d="M26 52 Q32 44 26 36 Q32 28 26 20 Q32 12 26 4" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+      <path d="M40 50 Q46 42 40 34 Q46 26 40 18" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+      {/* Water drops */}
+      <ellipse cx="52" cy="44" rx="4" ry="6" />
+      <ellipse cx="6" cy="8" rx="3" ry="5" />
+      {/* Stipple */}
+      <circle cx="18" cy="48" r="1.5" />
+      <circle cx="34" cy="48" r="1.5" />
+    </svg>
+  );
+}
+
+function LinkedCirclesIcon({ className = "", size = 60 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" className={className} fill="currentColor">
+      {/* Two interlocking circles */}
+      <circle cx="22" cy="30" r="16" />
+      <circle cx="22" cy="30" r="10" fill="var(--cream)" />
+      <circle cx="38" cy="30" r="16" />
+      <circle cx="38" cy="30" r="10" fill="var(--cream)" />
+      {/* Overlap area - filled */}
+      <path d="M30 18 A16 16 0 0 1 30 42 A16 16 0 0 1 30 18" />
+      {/* Stipple decoration */}
+      <circle cx="14" cy="24" r="1.5" fill="var(--cream)" />
+      <circle cx="46" cy="36" r="1.5" fill="var(--cream)" />
+      <circle cx="30" cy="30" r="2" fill="var(--cream)" />
+    </svg>
+  );
+}
+
+function BirdFlightIcon({ className = "", size = 60 }: { className?: string; size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 60 60" className={className} fill="currentColor">
+      {/* Bird body */}
+      <ellipse cx="30" cy="32" rx="14" ry="8" />
+      {/* Head */}
+      <circle cx="44" cy="28" r="6" />
+      {/* Beak */}
+      <polygon points="50,28 58,26 50,30" />
+      {/* Eye */}
+      <circle cx="46" cy="27" r="1.5" fill="var(--cream)" />
+      {/* Wings spread upward */}
+      <path d="M20 32 Q8 20 4 8 L18 24 Z" />
+      <path d="M34 28 Q40 16 52 6 L40 22 Z" />
+      {/* Tail feathers */}
+      <polygon points="16,34 4,42 8,32 4,36 16,30" />
+      {/* Sunrise rays behind */}
+      {[...Array(5)].map((_, i) => (
+        <line key={i} x1="30" y1="56" x2={14 + i * 8} y2="48" stroke="currentColor" strokeWidth="2" />
+      ))}
+      {/* Stipple */}
+      <circle cx="26" cy="34" r="1" fill="var(--cream)" />
+    </svg>
+  );
+}
+
 export default function GreatRebalancing() {
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     sacredName: "",
-    legalName: "",
     memberId: "",
     sponsorName: "",
     presenceQuotient: "5",
@@ -105,7 +263,6 @@ export default function GreatRebalancing() {
     consentCeremony: false,
     consentScourge: false,
     consentLedger: false,
-    consentPhotography: false,
     consentLiability: false,
     consentEarthSuit: false,
     consent401k: false,
@@ -269,12 +426,12 @@ export default function GreatRebalancing() {
           <div className="grid md:grid-cols-3 gap-0">
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Mandala size={40} className="text-[var(--cream)] mx-auto mb-4" />
-              <p className="text-[var(--charcoal)]/80 text-sm tracking-[0.2em] uppercase mb-2">Sacred Dates</p>
+              <p className="text-[var(--cream)]/60 text-sm tracking-[0.2em] uppercase mb-2">Sacred Dates</p>
               <p className="text-2xl text-[var(--cream)] font-bold" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
-                Feb 26 &ndash; Mar 1
+                Feb 27 &ndash; Mar 2
               </p>
-              <p className="text-[var(--charcoal)]/60">2026</p>
-              <p className="text-[var(--charcoal)]/50 text-sm mt-2 italic">Arrive after 3pm</p>
+              <p className="text-[var(--cream)]/60">2026</p>
+              <p className="text-[var(--cream)]/50 text-sm mt-2 italic">Arrive after 3pm</p>
             </div>
 
             <div className="bg-[var(--cream)] border border-[var(--charcoal)] p-8 text-center">
@@ -288,11 +445,11 @@ export default function GreatRebalancing() {
 
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Sunburst size={40} className="text-[var(--cream)] mx-auto mb-4" />
-              <p className="text-[var(--charcoal)]/80 text-sm tracking-[0.2em] uppercase mb-2">Dress Code</p>
+              <p className="text-[var(--cream)]/60 text-sm tracking-[0.2em] uppercase mb-2">Dress Code</p>
               <p className="text-xl text-[var(--cream)] font-bold" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
                 Earth Suit Coverings Are Meaningless
               </p>
-              <p className="text-[var(--charcoal)]/60 text-sm italic mt-2">Surrender all pretense</p>
+              <p className="text-[var(--cream)]/50 text-sm italic mt-2">Surrender all pretense</p>
             </div>
           </div>
         </div>
@@ -313,27 +470,65 @@ export default function GreatRebalancing() {
 
           <div className="space-y-0">
             {[
-              { title: "The Grand Check-In Ceremony", desc: "The sacred arrival ritual. Members formally check in, surrendering phones and external distractions to The Vault's care." },
-              { title: "The Scourge of Distraction", desc: "THE SIGNATURE RITUAL: Members identify their greatest distractions and symbolically purge them through ceremonial self-correction." },
-              { title: "The Presence Sessions", desc: "Workshops on achieving total presence—financially, spiritually, physically. Master the sacred art of being present." },
-              { title: "The Purification of the Earth Suit", desc: "Entirely nude sauna sessions designed to sweat out financial anxiety, market doubt, and diversification thinking. Towels are forbidden." },
-              { title: "The Reading of the Ledger", desc: "Public accounting where members' contributions are read aloud. Those who have given most are honored. Those who have given least are... encouraged." },
-              { title: "The Celebration of Gains", desc: "A night of unbridled joy, luxury, and libations where The Vault's success is toasted and our future prosperity is sealed." }
-            ].map((item, i) => (
-              <div key={i} className={`flex items-start gap-6 p-6 border-l-4 ${i === 5 ? 'border-[var(--charcoal)] bg-[var(--charcoal)] text-[var(--cream)]' : 'border-[var(--charcoal)]/50 bg-[var(--cream)]'}`}>
-                <div className={`w-10 h-10 flex items-center justify-center border-2 ${i === 5 ? 'border-[var(--cream)]' : 'border-[var(--charcoal)]'} flex-shrink-0`}>
-                  <span className="font-bold" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>{i + 1}</span>
+              {
+                title: "The Grand Check-In Ceremony",
+                desc: "The sacred arrival ritual. Members formally check in to the retreat, surrendering devices and external distractions to The Vault's care. Your presence becomes whole.",
+                icon: KeyIcon
+              },
+              {
+                title: "The First Supper",
+                desc: "As twilight descends, The Enlightened gather for the opening feast. Break bread with your fellow seekers. Let the bonds of collective prosperity begin to form.",
+                icon: ChaliceIcon
+              },
+              {
+                title: "The Morning Offering",
+                desc: "A light breakfast to prepare the vessel. Simple nourishment before the day's sacred work begins.",
+                icon: RisingSunIcon
+              },
+              {
+                title: "The Ritual Partaking",
+                desc: "At the appointed hour, members partake in the ceremonial sacrament. What follows cannot be described—only experienced. Trust in The Vault. Trust in the journey.",
+                icon: VesselIcon
+              },
+              {
+                title: "The Enchanted Passage",
+                desc: "Twelve hours reserved for safe passage through realms of insight and revelation. Trained guides will check in periodically to ensure your journey unfolds as intended. Surrender to the experience.",
+                icon: EyeSpiralIcon
+              },
+              {
+                title: "The Purification of the Earth Suit",
+                desc: "As the passage concludes, cleanse the vessel through heat and steam. Release what no longer serves you. Emerge renewed, lighter, ready for what comes next.",
+                icon: SteamWavesIcon
+              },
+              {
+                title: "The Day of Deep Communion",
+                desc: "A full day devoted to connection. Process the journey with your fellow travelers. Prepare your spirit for After Party consideration. The bonds formed here are eternal.",
+                icon: LinkedCirclesIcon
+              },
+              {
+                title: "The Feast of Emergence",
+                desc: "The final morning gathering. As the sun rises on your transformed self, share one last meal with those who witnessed your journey. Depart changed. Depart enlightened.",
+                icon: BirdFlightIcon
+              }
+            ].map((item, i) => {
+              const IconComponent = item.icon;
+              const isLast = i === 7;
+              return (
+                <div key={i} className={`flex items-start gap-6 p-6 border-l-4 ${isLast ? 'border-[var(--charcoal)] bg-[var(--charcoal)] text-[var(--cream)]' : 'border-[var(--charcoal)]/50 bg-[var(--cream)]'}`}>
+                  <div className="flex-shrink-0">
+                    <IconComponent size={48} className={isLast ? 'text-[var(--cream)]' : 'text-[var(--charcoal)]'} />
+                  </div>
+                  <div>
+                    <h3 className={`text-xl font-bold mb-2 tracking-wider ${isLast ? 'text-[var(--cream)]' : ''}`} style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                      {item.title}
+                    </h3>
+                    <p className={isLast ? 'text-[var(--cream)]/80' : 'text-[var(--charcoal)]/70'} style={{ fontFamily: 'var(--font-noto)' }}>
+                      {item.desc}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className={`text-xl font-bold mb-2 tracking-wider ${i === 5 ? 'text-[var(--cream)]' : ''}`} style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
-                    {item.title}
-                  </h3>
-                  <p className={i === 5 ? 'text-[var(--cream)]/80' : 'text-[var(--charcoal)]/70'} style={{ fontFamily: 'var(--font-noto)' }}>
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -375,18 +570,6 @@ export default function GreatRebalancing() {
                       onChange={(e) => setFormData({...formData, sacredName: e.target.value})}
                       className="w-full bg-white border-2 border-[var(--charcoal)] p-3 text-[var(--charcoal)] focus:outline-none focus:ring-2 focus:ring-[var(--charcoal)]"
                       placeholder="e.g., Prosperity Seeker Goldmind"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-2" style={{ fontFamily: 'var(--font-noto)' }}>
-                      Legal Name <span className="text-[var(--charcoal)]/50">(For IRS purposes only)</span>
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.legalName}
-                      onChange={(e) => setFormData({...formData, legalName: e.target.value})}
-                      className="w-full bg-white border-2 border-[var(--charcoal)] p-3 text-[var(--charcoal)] focus:outline-none focus:ring-2 focus:ring-[var(--charcoal)]"
                     />
                   </div>
                   <div>
@@ -472,7 +655,7 @@ export default function GreatRebalancing() {
                   </div>
                   <div>
                     <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-noto)' }}>
-                      List your top 3 distractions <span className="text-[var(--charcoal)]/50">(to be addressed at The Scourge)</span>
+                      Name three earthly tethers you wish to release <span className="text-[var(--charcoal)]/50">(that which binds you to the external world)</span>
                     </label>
                     <div className="space-y-2">
                       {[1, 2, 3].map((num) => (
@@ -483,7 +666,7 @@ export default function GreatRebalancing() {
                           value={formData[`distraction${num}` as keyof typeof formData] as string}
                           onChange={(e) => setFormData({...formData, [`distraction${num}`]: e.target.value})}
                           className="w-full bg-white border-2 border-[var(--charcoal)] p-3 text-[var(--charcoal)] focus:outline-none focus:ring-2 focus:ring-[var(--charcoal)]"
-                          placeholder={`Distraction #${num}`}
+                          placeholder={`Earthly Tether #${num}`}
                         />
                       ))}
                     </div>
@@ -524,15 +707,18 @@ export default function GreatRebalancing() {
                   </div>
                   <div>
                     <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-noto)' }}>
-                      Dietary Requirements
+                      Vessel Fueling Preferences
                     </label>
                     <div className="space-y-2">
                       {[
-                        { value: "vault", label: "I consume only what The Vault provides" },
-                        { value: "vegetarian", label: "Vegetarian (The Vault honors all paths)" },
-                        { value: "vegan", label: "Vegan (Maximum sacrifice)" },
-                        { value: "fasting", label: "I am fasting in preparation" },
-                        { value: "other", label: "Other restrictions (explain in Letter of Alignment)" }
+                        { value: "vault", label: "I consume only what The Vault provides (trust completely)" },
+                        { value: "plant", label: "Plant-based vessel maintenance (no animal essences)" },
+                        { value: "carnivore", label: "Ancestral protocol (meat and animal products only)" },
+                        { value: "breatharian", label: "I am sustained by The Vault's energy alone (no physical food required)" },
+                        { value: "liquidonly", label: "Liquids only (smoothies, broths, ceremonial beverages)" },
+                        { value: "allergies", label: "My vessel rejects certain substances (specify in Letter of Alignment)" },
+                        { value: "fasting", label: "I will be fasting to heighten receptivity" },
+                        { value: "whatever", label: "Feed me whatever maximizes my contribution to The Vault" }
                       ].map((option) => (
                         <label key={option.value} className="flex items-center gap-3 cursor-pointer">
                           <input
@@ -552,20 +738,19 @@ export default function GreatRebalancing() {
               {/* Section IV: Ritual Participation Consent */}
               <div className="border-2 border-[var(--charcoal)] p-6 md:p-8 bg-[var(--cream)] text-[var(--charcoal)]">
                 <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
-                  Section IV: Ritual Participation Consent
+                  Section IV: Surrender of Will
                 </h3>
                 <p className="text-[var(--charcoal)]/60 text-sm mb-6 italic" style={{ fontFamily: 'var(--font-noto)' }}>
-                  All boxes must be checked to proceed. Your participation is voluntary but mandatory.
+                  All boxes must be checked to proceed. Hesitation is a form of resistance. Resistance delays your prosperity.
                 </p>
                 <div className="space-y-4">
                   {[
-                    { key: "consentCeremony", label: "I consent to participate in The Grand Check-In Ceremony" },
-                    { key: "consentScourge", label: "I consent to The Scourge of Distraction and accept its purifying nature" },
-                    { key: "consentEarthSuit", label: "I consent to full earth suit exposure during nude sauna purification and accept that towels are forbidden" },
-                    { key: "consentLedger", label: "I acknowledge that The Reading of the Ledger may include my name and contribution amount" },
-                    { key: "consentPhotography", label: "I understand that photography is forbidden except by authorized High Keepers" },
-                    { key: "consentLiability", label: "I release The Vault from all liability, temporal and eternal" },
-                    { key: "consent401k", label: "I confirm my 401(k) transference status is accurate and current" }
+                    { key: "consentCeremony", label: "I surrender my devices, my distractions, and my attachment to the outside world for the duration of The Great Check-In" },
+                    { key: "consentScourge", label: "I consent to The Ritual Partaking and accept whatever substances The Vault deems necessary for my enlightenment" },
+                    { key: "consentEarthSuit", label: "I consent to communal Purification of the Earth Suit and release all shame associated with my physical vessel" },
+                    { key: "consentLedger", label: "I understand that what happens during The Enchanted Passage may be disorienting, and I will not hold The Vault responsible for any revelations received" },
+                    { key: "consentLiability", label: "I release The Vault, its High Keepers, and all affiliated entities from liability for any physical, emotional, spiritual, or financial consequences" },
+                    { key: "consent401k", label: "I confirm that my 401(k) transference is complete, or I commit to completing it before The Great Check-In" }
                   ].map((consent) => (
                     <label key={consent.key} className="flex items-start gap-3 cursor-pointer">
                       <input
@@ -737,7 +922,7 @@ export default function GreatRebalancing() {
             </div>
 
             <p className="text-lg font-semibold mb-8">
-              Prepare your spirit. Prepare your distractions for purging.
+              Prepare your spirit. Prepare for the journey ahead.
             </p>
 
             <p className="text-[var(--charcoal)]/50 text-xs mb-6">

@@ -275,18 +275,26 @@ export default function GreatRebalancing() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const submissionData = {
+      ...formData,
+      dietary: formData.dietary.join(", "),
+      timestamp: new Date().toISOString(),
+    };
+
+    console.log("Submitting to:", GOOGLE_SCRIPT_URL);
+    console.log("Submission data:", submissionData);
+
     try {
       if (GOOGLE_SCRIPT_URL) {
-        await fetch(GOOGLE_SCRIPT_URL, {
+        const response = await fetch(GOOGLE_SCRIPT_URL, {
           method: "POST",
           mode: "no-cors",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            ...formData,
-            dietary: formData.dietary.join(", "),
-            timestamp: new Date().toISOString(),
-          }),
+          body: JSON.stringify(submissionData),
         });
+        console.log("Response status:", response.status, response.type);
+      } else {
+        console.warn("No GOOGLE_SCRIPT_URL configured");
       }
       setShowConfirmation(true);
     } catch (error) {

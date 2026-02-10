@@ -467,7 +467,7 @@ export default function GreatRebalancing() {
       <section className="py-24 px-6 bg-[var(--cream)] text-[var(--charcoal)]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <Fox size={80} className="text-[var(--charcoal)] mx-auto mb-6" />
+            <EyeSpiralIcon size={80} className="text-[var(--charcoal)] mx-auto mb-6" />
             <h2
               className="text-4xl font-bold mb-4 tracking-[0.15em]"
               style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}

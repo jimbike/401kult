@@ -166,7 +166,7 @@ function Footer() {
         </div>
 
         <p className="text-[var(--cream)]/20 text-xs mt-8 tracking-wider">
-          &copy; {new Date().getFullYear()} 401Kult. All transferences are final. The After Party is not guaranteed.
+          &copy; {new Date().getFullYear()} 401Kult. All transferences are final.
         </p>
       </div>
     </footer>

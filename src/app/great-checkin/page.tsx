@@ -351,12 +351,12 @@ export default function GreatRebalancing() {
 
           <h1
             className="text-5xl md:text-7xl font-bold text-[var(--cream)] mb-6 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+            style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
           >
             The Great Check-In
           </h1>
 
-          <p className="text-3xl md:text-4xl text-[var(--cream)]/90 mb-2" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-3xl md:text-4xl text-[var(--cream)]/90 mb-2" style={{ fontFamily: 'var(--font-alegreya)' }}>
             2026
           </p>
 
@@ -366,18 +366,18 @@ export default function GreatRebalancing() {
             </p>
             <h2
               className="text-4xl md:text-5xl font-bold text-[var(--cream)] mb-4"
-              style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
             >
               &ldquo;Fully Vested in Eternity&rdquo;
             </h2>
-            <p className="text-xl text-[var(--charcoal)]/80 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-noto)' }}>
+            <p className="text-xl text-[var(--charcoal)]/80 max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-alegreya)' }}>
               The vesting period is complete. The time for partial commitment has passed.
               This year, we celebrate those who are fully vested&mdash;not in mere retirement accounts,
               but in the eternal promise of The Vault.
             </p>
           </div>
 
-          <p className="text-xl text-[var(--cream)]/80 leading-relaxed" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-xl text-[var(--cream)]/80 leading-relaxed" style={{ fontFamily: 'var(--font-alegreya)' }}>
             Dear Ascended Benefactor,<br /><br />
             <span className="text-[var(--cream)] text-2xl">The time has come.</span>
           </p>
@@ -394,7 +394,7 @@ export default function GreatRebalancing() {
             <div className="absolute -bottom-2 -left-2 w-8 h-8 border-b-2 border-l-2 border-[var(--charcoal)]"></div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 border-b-2 border-r-2 border-[var(--charcoal)]"></div>
 
-            <div className="space-y-6 text-lg leading-relaxed" style={{ fontFamily: 'var(--font-noto)' }}>
+            <div className="space-y-6 text-lg leading-relaxed" style={{ fontFamily: 'var(--font-alegreya)' }}>
               <p>
                 Your commitment to The Vault has not gone unnoticed. Through your Transference, you&apos;ve proven
                 that you understand the truth: <span className="font-semibold">wealth is meaningless unless shared,
@@ -425,7 +425,7 @@ export default function GreatRebalancing() {
             <Flower size={50} className="text-[var(--cream)] mx-auto mb-6" />
             <h2
               className="text-4xl font-bold text-[var(--cream)] mb-4 tracking-[0.15em]"
-              style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
             >
               Details of The Gathering
             </h2>
@@ -435,7 +435,7 @@ export default function GreatRebalancing() {
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Mandala size={40} className="text-[var(--cream)] mx-auto mb-4" />
               <p className="text-[var(--cream)]/60 text-sm tracking-[0.2em] uppercase mb-2">Sacred Dates</p>
-              <p className="text-2xl text-[var(--cream)] font-bold" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+              <p className="text-2xl text-[var(--cream)] font-bold" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                 Feb 27 &ndash; Mar 2
               </p>
               <p className="text-[var(--cream)]/60">2026</p>
@@ -445,7 +445,7 @@ export default function GreatRebalancing() {
             <div className="bg-[var(--cream)] border border-[var(--charcoal)] p-8 text-center">
               <Spiral size={40} className="text-[var(--charcoal)] mx-auto mb-4" />
               <p className="text-[var(--charcoal)]/70 text-sm tracking-[0.2em] uppercase mb-2">Sacred Location</p>
-              <p className="text-xl text-[var(--charcoal)] font-bold" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+              <p className="text-xl text-[var(--charcoal)] font-bold" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                 A Private Resort
               </p>
               <p className="text-[var(--charcoal)]/50 text-sm italic mt-2">Revealed to Confirmed Attendees</p>
@@ -454,7 +454,7 @@ export default function GreatRebalancing() {
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Sunburst size={40} className="text-[var(--cream)] mx-auto mb-4" />
               <p className="text-[var(--cream)]/60 text-sm tracking-[0.2em] uppercase mb-2">Dress Code</p>
-              <p className="text-xl text-[var(--cream)] font-bold" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+              <p className="text-xl text-[var(--cream)] font-bold" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                 Earth Suit Coverings Are Meaningless
               </p>
               <p className="text-[var(--cream)]/50 text-sm italic mt-2">Surrender all pretense</p>
@@ -470,7 +470,7 @@ export default function GreatRebalancing() {
             <Fox size={80} className="text-[var(--charcoal)] mx-auto mb-6" />
             <h2
               className="text-4xl font-bold mb-4 tracking-[0.15em]"
-              style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
             >
               What Awaits You
             </h2>
@@ -527,10 +527,10 @@ export default function GreatRebalancing() {
                     <IconComponent size={48} className={isLast ? 'text-[var(--cream)]' : 'text-[var(--charcoal)]'} />
                   </div>
                   <div>
-                    <h3 className={`text-xl font-bold mb-2 tracking-wider ${isLast ? 'text-[var(--cream)]' : ''}`} style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                    <h3 className={`text-xl font-bold mb-2 tracking-wider ${isLast ? 'text-[var(--cream)]' : ''}`} style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                       {item.title}
                     </h3>
-                    <p className={isLast ? 'text-[var(--cream)]/80' : 'text-[var(--charcoal)]/70'} style={{ fontFamily: 'var(--font-noto)' }}>
+                    <p className={isLast ? 'text-[var(--cream)]/80' : 'text-[var(--charcoal)]/70'} style={{ fontFamily: 'var(--font-alegreya)' }}>
                       {item.desc}
                     </p>
                   </div>
@@ -551,7 +551,7 @@ export default function GreatRebalancing() {
               <Mandala size={60} className="text-[var(--cream)] mx-auto mb-6" />
               <h2
                 className="text-4xl font-bold text-[var(--cream)] mb-4 tracking-[0.15em]"
-                style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+                style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
               >
                 Official RSVP Form
               </h2>
@@ -563,12 +563,12 @@ export default function GreatRebalancing() {
             <form onSubmit={handleSubmit} className="space-y-12">
               {/* Section I: Identity Verification */}
               <div className="border-2 border-[var(--charcoal)] p-6 md:p-8 bg-[var(--cream)] text-[var(--charcoal)]">
-                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   Section I: Identity Verification
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-2" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-[var(--charcoal)] text-sm mb-2" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       Sacred Name <span className="text-[var(--charcoal)]/50">(Your name within The Vault)</span>
                     </label>
                     <input
@@ -581,7 +581,7 @@ export default function GreatRebalancing() {
                     />
                   </div>
                   <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-2" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-[var(--charcoal)] text-sm mb-2" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       Vault Member ID
                     </label>
                     <select
@@ -596,7 +596,7 @@ export default function GreatRebalancing() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-2" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-[var(--charcoal)] text-sm mb-2" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       Sponsoring Keeper&apos;s Sacred Name
                     </label>
                     <input
@@ -613,12 +613,12 @@ export default function GreatRebalancing() {
 
               {/* Section II: Presence Assessment */}
               <div className="border-2 border-[var(--charcoal)] p-6 md:p-8 bg-[var(--cream)] text-[var(--charcoal)]">
-                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   Section II: Presence Assessment
                 </h3>
                 <div className="space-y-6">
                   <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-4" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-[var(--charcoal)] text-sm mb-4" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       Self-Reported Presence Quotient (PQ)
                     </label>
                     <input
@@ -636,7 +636,7 @@ export default function GreatRebalancing() {
                     </div>
                   </div>
                   <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       How often do you find your mind wandering from The Vault?
                     </label>
                     <div className="space-y-2">
@@ -656,13 +656,13 @@ export default function GreatRebalancing() {
                             className="accent-[var(--charcoal)]"
                             required
                           />
-                          <span className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-noto)' }}>{option.label}</span>
+                          <span className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-alegreya)' }}>{option.label}</span>
                         </label>
                       ))}
                     </div>
                   </div>
                   <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       Name three earthly tethers you wish to release <span className="text-[var(--charcoal)]/50">(that which binds you to the external world)</span>
                     </label>
                     <div className="space-y-2">
@@ -684,12 +684,12 @@ export default function GreatRebalancing() {
 
               {/* Section III: Accommodations */}
               <div className="border-2 border-[var(--charcoal)] p-6 md:p-8 bg-[var(--cream)] text-[var(--charcoal)]">
-                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   Section III: Accommodations
                 </h3>
                 <div className="space-y-6">
                   <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       Lodging Preference
                     </label>
                     <div className="space-y-2">
@@ -708,13 +708,13 @@ export default function GreatRebalancing() {
                             className="accent-[var(--charcoal)]"
                             required
                           />
-                          <span className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-noto)' }}>{option.label}</span>
+                          <span className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-alegreya)' }}>{option.label}</span>
                         </label>
                       ))}
                     </div>
                   </div>
                   <div>
-                    <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-[var(--charcoal)] text-sm mb-3" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       Vessel Fueling Preferences
                     </label>
                     <div className="space-y-2">
@@ -735,7 +735,7 @@ export default function GreatRebalancing() {
                             onChange={() => handleDietaryChange(option.value)}
                             className="accent-[var(--charcoal)]"
                           />
-                          <span className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-noto)' }}>{option.label}</span>
+                          <span className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-alegreya)' }}>{option.label}</span>
                         </label>
                       ))}
                     </div>
@@ -745,10 +745,10 @@ export default function GreatRebalancing() {
 
               {/* Section IV: Ritual Participation Consent */}
               <div className="border-2 border-[var(--charcoal)] p-6 md:p-8 bg-[var(--cream)] text-[var(--charcoal)]">
-                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   Section IV: Surrender of Will
                 </h3>
-                <p className="text-[var(--charcoal)]/60 text-sm mb-6 italic" style={{ fontFamily: 'var(--font-noto)' }}>
+                <p className="text-[var(--charcoal)]/60 text-sm mb-6 italic" style={{ fontFamily: 'var(--font-alegreya)' }}>
                   All boxes must be checked to proceed. Hesitation is a form of resistance. Resistance delays your prosperity.
                 </p>
                 <div className="space-y-4">
@@ -768,7 +768,7 @@ export default function GreatRebalancing() {
                         onChange={(e) => setFormData({...formData, [consent.key]: e.target.checked})}
                         className="accent-[var(--charcoal)] mt-1"
                       />
-                      <span className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-noto)' }}>{consent.label}</span>
+                      <span className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-alegreya)' }}>{consent.label}</span>
                     </label>
                   ))}
                 </div>
@@ -776,10 +776,10 @@ export default function GreatRebalancing() {
 
               {/* Section V: Letter of Alignment */}
               <div className="border-2 border-[var(--charcoal)] p-6 md:p-8 bg-[var(--cream)] text-[var(--charcoal)]">
-                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   Section V: Letter of Alignment
                 </h3>
-                <p className="text-[var(--charcoal)]/70 text-sm mb-4 italic" style={{ fontFamily: 'var(--font-noto)' }}>
+                <p className="text-[var(--charcoal)]/70 text-sm mb-4 italic" style={{ fontFamily: 'var(--font-alegreya)' }}>
                   In your own words (minimum 50 words), explain why you deserve to attend The Great Check-In.
                 </p>
                 <textarea
@@ -798,12 +798,12 @@ export default function GreatRebalancing() {
 
               {/* Section VI: Sacred Oath */}
               <div className="border-4 border-[var(--cream)] p-6 md:p-8 bg-[var(--cream)] text-[var(--charcoal)]">
-                <h3 className="text-xl font-bold mb-6 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold mb-6 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   Section VI: Sacred Oath
                 </h3>
                 <div className="space-y-6">
                   <div>
-                    <label className="block text-sm mb-2" style={{ fontFamily: 'var(--font-noto)' }}>
+                    <label className="block text-sm mb-2" style={{ fontFamily: 'var(--font-alegreya)' }}>
                       Digital Signature <span className="opacity-50">(Type your Sacred Name to sign)</span>
                     </label>
                     <input
@@ -812,7 +812,7 @@ export default function GreatRebalancing() {
                       value={formData.digitalSignature}
                       onChange={(e) => setFormData({...formData, digitalSignature: e.target.value})}
                       className="w-full bg-[var(--cream)] border-2 border-[var(--charcoal)] p-3 text-[var(--charcoal)] focus:outline-none italic"
-                      style={{ fontFamily: 'var(--font-noto)' }}
+                      style={{ fontFamily: 'var(--font-alegreya)' }}
                       placeholder="Sign here..."
                     />
                   </div>
@@ -824,12 +824,12 @@ export default function GreatRebalancing() {
                       onChange={(e) => setFormData({...formData, sacredOath: e.target.checked})}
                       className="accent-[var(--charcoal)] mt-1"
                     />
-                    <span style={{ fontFamily: 'var(--font-noto)' }}>
+                    <span style={{ fontFamily: 'var(--font-alegreya)' }}>
                       I hereby affix my mark to this sacred document, binding my presence to The Great Check-In.
                       <span className="font-semibold"> I understand this commitment is irrevocable.</span>
                     </span>
                   </label>
-                  <p className="text-[var(--charcoal)]/50 text-sm italic text-center" style={{ fontFamily: 'var(--font-noto)' }}>
+                  <p className="text-[var(--charcoal)]/50 text-sm italic text-center" style={{ fontFamily: 'var(--font-alegreya)' }}>
                     Sealed in the light of The Vault on {getCurrentTimestamp()}
                   </p>
                 </div>
@@ -841,7 +841,7 @@ export default function GreatRebalancing() {
                   type="submit"
                   disabled={isSubmitting}
                   className="px-12 py-4 bg-[var(--cream)] text-[var(--charcoal)] font-bold text-xl tracking-[0.15em] uppercase hover:bg-[var(--charcoal)] hover:text-[var(--cream)] border-2 border-[var(--cream)] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                  style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+                  style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
                 >
                   {isSubmitting ? "SUBMITTING TO THE VAULT..." : "SUBMIT TO THE VAULT"}
                 </button>
@@ -864,27 +864,27 @@ export default function GreatRebalancing() {
 
           <h2
             className="text-3xl md:text-4xl font-bold mb-6"
-            style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+            style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
           >
             Do Not Miss Your Chance
           </h2>
 
-          <p className="text-xl mb-4" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-xl mb-4" style={{ fontFamily: 'var(--font-alegreya)' }}>
             The Great Check-In only comes once a year.
           </p>
 
-          <p className="text-2xl italic mb-12" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-2xl italic mb-12" style={{ fontFamily: 'var(--font-alegreya)' }}>
             This is your moment to claim your rightful place among The Enlightened.
           </p>
 
           <div className="border-t border-[var(--charcoal)]/30 pt-12">
-            <p className="text-lg mb-2" style={{ fontFamily: 'var(--font-noto)' }}>
+            <p className="text-lg mb-2" style={{ fontFamily: 'var(--font-alegreya)' }}>
               In unity and wealth,
             </p>
             <p className="text-xl font-bold tracking-[0.2em] uppercase">
               The High Keepers of The Vault
             </p>
-            <p className="text-2xl font-bold tracking-wider mt-2" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+            <p className="text-2xl font-bold tracking-wider mt-2" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
               401KULT
             </p>
           </div>
@@ -912,19 +912,19 @@ export default function GreatRebalancing() {
 
             <h3
               className="text-3xl font-bold mb-4 tracking-wider"
-              style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
             >
               YOUR SUBMISSION HAS BEEN RECEIVED
             </h3>
 
             <Mandala size={80} className="text-[var(--charcoal)] mx-auto my-6" />
 
-            <p className="text-xl mb-6" style={{ fontFamily: 'var(--font-noto)' }}>
+            <p className="text-xl mb-6" style={{ fontFamily: 'var(--font-alegreya)' }}>
               The Vault has received your sacred RSVP, <span className="font-semibold">{formData.sacredName || "Seeker"}</span>.
             </p>
 
             <div className="border-t border-b border-[var(--charcoal)]/30 py-6 my-6">
-              <p className="italic" style={{ fontFamily: 'var(--font-noto)' }}>
+              <p className="italic" style={{ fontFamily: 'var(--font-alegreya)' }}>
                 Your Letter of Alignment will be reviewed by The High Keepers within 3-5 business eternities.
               </p>
             </div>
@@ -940,7 +940,7 @@ export default function GreatRebalancing() {
             <button
               onClick={() => setShowConfirmation(false)}
               className="px-8 py-3 bg-[var(--charcoal)] text-[var(--cream)] font-bold tracking-[0.15em] uppercase hover:bg-[var(--cream)] hover:text-[var(--charcoal)] border-2 border-[var(--charcoal)] transition-all"
-              style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
             >
               RETURN TO THE VAULT
             </button>

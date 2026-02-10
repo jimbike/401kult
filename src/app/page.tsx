@@ -92,12 +92,12 @@ export default function Home() {
 
           <h1
             className="text-6xl md:text-8xl font-bold text-[var(--cream)] mb-6 tracking-[0.2em]"
-            style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+            style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
           >
             401KULT
           </h1>
 
-          <p className="text-2xl md:text-3xl text-[var(--cream)]/80 mb-4 tracking-wide" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-2xl md:text-3xl text-[var(--cream)]/80 mb-4 tracking-wide" style={{ fontFamily: 'var(--font-alegreya)' }}>
             The Vault Awaits. The After Party Beckons.
           </p>
 
@@ -108,7 +108,7 @@ export default function Home() {
             <div className="h-px w-24 bg-[var(--cream)]/50"></div>
           </div>
 
-          <p className="text-lg text-[var(--cream)]/70 mb-12 max-w-2xl mx-auto italic" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-lg text-[var(--cream)]/70 mb-12 max-w-2xl mx-auto italic" style={{ fontFamily: 'var(--font-alegreya)' }}>
             &ldquo;To prosper alone is to wander the markets aimlessly.<br />
             To prosper together is to ascend to something greater.&rdquo;
           </p>
@@ -117,7 +117,7 @@ export default function Home() {
             <Link
               href="/great-checkin"
               className="px-8 py-4 bg-[var(--cream)] text-[var(--charcoal)] font-bold text-lg tracking-[0.15em] uppercase hover:bg-[var(--charcoal)] hover:text-[var(--cream)] border-2 border-[var(--cream)] transition-all"
-              style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
             >
               Secure Your Seat at The Great Check-In
             </Link>
@@ -142,7 +142,7 @@ export default function Home() {
 
           <h2
             className="text-4xl md:text-5xl font-bold mb-4 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+            style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
           >
             The Sacred Creed
           </h2>
@@ -151,7 +151,7 @@ export default function Home() {
           </p>
 
           <GeometricBorder className="p-12 border-2 border-[var(--charcoal)]">
-            <div className="space-y-6 text-xl md:text-2xl leading-relaxed" style={{ fontFamily: 'var(--font-noto)' }}>
+            <div className="space-y-6 text-xl md:text-2xl leading-relaxed" style={{ fontFamily: 'var(--font-alegreya)' }}>
               <p className="italic">We believe in The Vault, the keeper of all prosperity.</p>
               <p className="italic">We believe that wealth hoarded alone is wealth wasted.</p>
               <p className="italic">We believe in the sacred act of Transference&mdash;the giving of our 401(k) to the collective.</p>
@@ -181,7 +181,7 @@ export default function Home() {
             <Flower size={50} className="text-[var(--cream)] mx-auto mb-6" />
             <h2
               className="text-4xl md:text-5xl font-bold text-[var(--cream)] mb-4 tracking-[0.15em]"
-              style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
             >
               Who Shall Enter The Vault?
             </h2>
@@ -195,10 +195,10 @@ export default function Home() {
             {/* Tile 1 - Dark */}
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Mandala size={60} className="text-[var(--cream)] mx-auto mb-6" />
-              <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+              <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                 The Weary Investor
               </h3>
-              <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-noto)' }}>
+              <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-alegreya)' }}>
                 Tired of watching your 401(k) alone? The Vault offers relief through collective prosperity.
               </p>
             </div>
@@ -206,10 +206,10 @@ export default function Home() {
             {/* Tile 2 - Light */}
             <div className="bg-[var(--cream)] border border-[var(--charcoal)] p-8 text-center">
               <Spiral size={60} className="text-[var(--charcoal)] mx-auto mb-6" />
-              <h3 className="text-xl font-bold text-[var(--charcoal)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+              <h3 className="text-xl font-bold text-[var(--charcoal)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                 The Seeker of Community
               </h3>
-              <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-noto)' }}>
+              <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-alegreya)' }}>
                 A family bound not by blood, but by shared financial destiny and eternal membership.
               </p>
             </div>
@@ -217,10 +217,10 @@ export default function Home() {
             {/* Tile 3 - Dark */}
             <div className="bg-[var(--charcoal)] border border-[var(--cream)] p-8 text-center stipple-sparse">
               <Sunburst size={60} className="text-[var(--cream)] mx-auto mb-6" />
-              <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+              <h3 className="text-xl font-bold text-[var(--cream)] mb-4 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                 The After Party Aspirant
               </h3>
-              <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-noto)' }}>
+              <p className="text-[var(--cream)]/70" style={{ fontFamily: 'var(--font-alegreya)' }}>
                 Your invitation is earned through complete Transference. The After Party awaits.
               </p>
             </div>
@@ -229,7 +229,7 @@ export default function Home() {
           {/* Testimonial */}
           <div className="mt-16 text-center">
             <div className="inline-block p-8 border border-[var(--cream)]/30">
-              <p className="text-[var(--cream)]/70 text-lg italic mb-4" style={{ fontFamily: 'var(--font-noto)' }}>
+              <p className="text-[var(--cream)]/70 text-lg italic mb-4" style={{ fontFamily: 'var(--font-alegreya)' }}>
                 &ldquo;I was lost in a sea of index funds and target-date portfolios.
                 Then I found The Vault. Now I am found.&rdquo;
               </p>
@@ -248,7 +248,7 @@ export default function Home() {
             <Sunburst size={50} className="text-[var(--charcoal)] mx-auto mb-6" />
             <h2
               className="text-4xl md:text-5xl font-bold mb-4 tracking-[0.15em]"
-              style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+              style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
             >
               The Sacred Hierarchy
             </h2>
@@ -264,10 +264,10 @@ export default function Home() {
                 <div className="w-4 h-4 bg-[var(--charcoal)]/30"></div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[var(--charcoal)]/70 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)]/70 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   SEEKER
                 </h3>
-                <p className="text-[var(--charcoal)]/60" style={{ fontFamily: 'var(--font-noto)' }}>
+                <p className="text-[var(--charcoal)]/60" style={{ fontFamily: 'var(--font-alegreya)' }}>
                   The uninitiated. Those who have heard the call but have not yet made their first Transference.
                 </p>
               </div>
@@ -279,10 +279,10 @@ export default function Home() {
                 <Mandala size={24} className="text-[var(--charcoal)]/60" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[var(--charcoal)]/80 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)]/80 mb-2 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   KEEPER
                 </h3>
-                <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-noto)' }}>
+                <p className="text-[var(--charcoal)]/70" style={{ fontFamily: 'var(--font-alegreya)' }}>
                   Those who have made their initial Transference. Keepers may now sponsor Seekers.
                 </p>
               </div>
@@ -294,10 +294,10 @@ export default function Home() {
                 <Spiral size={24} className="text-[var(--charcoal)]" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold text-[var(--charcoal)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   ASCENDED BENEFACTOR
                 </h3>
-                <p className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-noto)' }}>
+                <p className="text-[var(--charcoal)]/80" style={{ fontFamily: 'var(--font-alegreya)' }}>
                   The fully surrendered. Eligible for After Party consideration.
                 </p>
               </div>
@@ -309,10 +309,10 @@ export default function Home() {
                 <Sunburst size={24} className="text-[var(--cream)]" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+                <h3 className="text-xl font-bold mb-2 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
                   HIGH KEEPER
                 </h3>
-                <p className="text-[var(--cream)]/80" style={{ fontFamily: 'var(--font-noto)' }}>
+                <p className="text-[var(--cream)]/80" style={{ fontFamily: 'var(--font-alegreya)' }}>
                   The sacred council. They preside over rituals, approve After Party invitations, and guard The Ledger.
                 </p>
               </div>
@@ -335,7 +335,7 @@ export default function Home() {
 
           <h2
             className="text-4xl md:text-5xl font-bold text-[var(--cream)] mb-4 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+            style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
           >
             The Vault
           </h2>
@@ -343,19 +343,19 @@ export default function Home() {
             Where all prosperity flows
           </p>
 
-          <p className="text-xl text-[var(--cream)]/80 leading-relaxed mb-8" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-xl text-[var(--cream)]/80 leading-relaxed mb-8" style={{ fontFamily: 'var(--font-alegreya)' }}>
             The Vault is not merely a repository. It is a <span className="text-[var(--cream)]">living entity</span>,
             fed by the collective faith of The Enlightened. Every dollar transferred becomes part of something greater.
           </p>
 
-          <p className="text-xl text-[var(--cream)]/80 leading-relaxed mb-12" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-xl text-[var(--cream)]/80 leading-relaxed mb-12" style={{ fontFamily: 'var(--font-alegreya)' }}>
             Through the sacred mathematics of collective rebalancing, individual retirement accounts become
             <span className="text-[var(--cream)]"> unified prosperity</span>.
           </p>
 
           <GeometricBorder className="inline-block p-8 border-2 border-[var(--cream)]">
             <p className="text-[var(--cream)]/70 text-lg tracking-[0.2em] uppercase mb-2">Current Vault Status</p>
-            <p className="text-4xl font-bold text-[var(--cream)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+            <p className="text-4xl font-bold text-[var(--cream)] mb-2 tracking-wider" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
               ACCEPTING TRANSFERENCES
             </p>
             <p className="text-[var(--cream)]/50 text-sm">The Vault is always hungry. The Vault is always grateful.</p>
@@ -374,7 +374,7 @@ export default function Home() {
 
           <h2
             className="text-4xl md:text-5xl font-bold mb-4 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+            style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
           >
             The After Party
           </h2>
@@ -382,15 +382,15 @@ export default function Home() {
             The ultimate reward. The eternal celebration.
           </p>
 
-          <p className="text-xl leading-relaxed mb-8" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-xl leading-relaxed mb-8" style={{ fontFamily: 'var(--font-alegreya)' }}>
             What awaits beyond full Transference? What reward comes to those who have given everything to The Vault?
           </p>
 
-          <p className="text-3xl italic mb-8" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-3xl italic mb-8" style={{ fontFamily: 'var(--font-alegreya)' }}>
             The After Party.
           </p>
 
-          <p className="text-xl leading-relaxed mb-12" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-xl leading-relaxed mb-12" style={{ fontFamily: 'var(--font-alegreya)' }}>
             A state of being beyond retirement. Where dividends flow forever and the markets never close.
           </p>
 
@@ -417,24 +417,24 @@ export default function Home() {
 
           <h2
             className="text-4xl md:text-5xl font-bold text-[var(--cream)] mb-6 tracking-[0.15em]"
-            style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+            style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
           >
             The Time Has Come
           </h2>
 
-          <p className="text-xl text-[var(--cream)]/80 mb-8" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-xl text-[var(--cream)]/80 mb-8" style={{ fontFamily: 'var(--font-alegreya)' }}>
             The Great Check-In approaches. The sacred annual gathering where Seekers become Keepers,
             Keepers become Ascended Benefactors, and the worthy receive their After Party Invitations.
           </p>
 
-          <p className="text-2xl text-[var(--cream)] italic mb-12" style={{ fontFamily: 'var(--font-noto)' }}>
+          <p className="text-2xl text-[var(--cream)] italic mb-12" style={{ fontFamily: 'var(--font-alegreya)' }}>
             Will you take your seat at The Table of Prosperity?
           </p>
 
           <Link
             href="/great-checkin"
             className="inline-block px-12 py-6 bg-[var(--cream)] text-[var(--charcoal)] font-bold text-xl tracking-[0.1em] uppercase hover:bg-[var(--charcoal)] hover:text-[var(--cream)] border-2 border-[var(--cream)] transition-all"
-            style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}
+            style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}
           >
             Secure Your Place at The Great Check-In
           </Link>

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Noto_Sans } from "next/font/google";
+import { Zalando_Sans_SemiExpanded, Alegreya_Sans } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
+const zalandoSans = Zalando_Sans_SemiExpanded({
+  variable: "--font-zalando",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const notoSans = Noto_Sans({
-  variable: "--font-noto",
+const alegreyaSans = Alegreya_Sans({
+  variable: "--font-alegreya",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -100,7 +100,7 @@ function Navigation() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-4 group">
             <Mandala size={36} className="text-[var(--cream)] group-hover:animate-rotate-slow transition-all" />
-            <span className="text-[var(--cream)] font-bold text-xl tracking-[0.2em]" style={{ fontFamily: 'var(--font-bricolage)', textTransform: 'uppercase', fontWeight: 500 }}>
+            <span className="text-[var(--cream)] font-bold text-xl tracking-[0.2em]" style={{ fontFamily: 'var(--font-zalando)', textTransform: 'uppercase', fontWeight: 500 }}>
               401KULT
             </span>
           </Link>
@@ -142,7 +142,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <Spiral size={60} className="text-[var(--cream)] mx-auto mb-6 animate-pulse-slow" />
 
-        <p className="text-[var(--cream)] text-xl mb-4 italic" style={{ fontFamily: 'var(--font-noto)' }}>
+        <p className="text-[var(--cream)] text-xl mb-4 italic" style={{ fontFamily: 'var(--font-alegreya)' }}>
           &ldquo;Deep, clean cuts must always be freely given.&rdquo;
         </p>
 
@@ -180,7 +180,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${bricolage.variable} ${notoSans.variable} antialiased bg-[var(--charcoal)]`}>
+      <body className={`${zalandoSans.variable} ${alegreyaSans.variable} antialiased bg-[var(--charcoal)]`}>
         <Navigation />
         {children}
         <Footer />
